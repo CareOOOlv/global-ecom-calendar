@@ -1,0 +1,100 @@
+{
+  "name": "全球电商日历",
+  "short_name": "电商日历",
+  "description": "根据日期和地区自动生成节日、大型活动、气候和采购建议的跨境电商工具",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#EF4444",
+  "orientation": "any",
+  "scope": "/",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/icons/pwa-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/pwa-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/pwa-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/pwa-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/pwa-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/pwa-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot-narrow.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "美国市场",
+      "short_name": "美国",
+      "description": "查看美国市场数据",
+      "url": "/?region=us",
+      "icons": [{ "src": "/icons/pwa-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "欧洲市场",
+      "short_name": "欧洲",
+      "description": "查看欧洲市场数据",
+      "url": "/?region=europe",
+      "icons": [{ "src": "/icons/pwa-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "日本市场",
+      "short_name": "日本",
+      "description": "查看日本市场数据",
+      "url": "/?region=japan",
+      "icons": [{ "src": "/icons/pwa-96x96.png", "sizes": "96x96" }]
+    }
+  ]
+}

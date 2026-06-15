@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# 全球电商日历
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+根据日期和地区自动生成节日、大型活动、气候和采购建议的跨境电商工具。
 
-Currently, two official plugins are available:
+## 在线使用
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+直接访问：https://jpgcnpf22b6ym.ok.kimi.link
 
-## React Compiler
+支持 PWA 安装到桌面，Chrome 菜单 -> 安装页面为应用。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 桌面端安装包
 
-## Expanding the ESLint configuration
+GitHub Actions 自动编译发布，下载对应平台安装包即可：
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| 平台 | 安装包 |
+|------|--------|
+| Windows (x64) | `.msi` 或 `.exe` |
+| macOS (Intel) | `.dmg` (x86_64) |
+| macOS (Apple Silicon M1/M2/M3) | `.dmg` (aarch64) |
+| Linux (Debian/Ubuntu) | `.deb` |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 本地开发
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+```bash
+# 安装依赖
+npm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 本地构建桌面端（需要 Rust）
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# 安装 Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source ~/.cargo/env
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 构建桌面应用
+npx tauri build
 ```
+
+## GitHub Actions 自动发布
+
+推送 tag 后自动编译并发布：
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+GitHub Actions 会自动编译 Windows / macOS / Linux 三个平台的安装包，并创建 Release。
+
+## 功能
+
+- 9大区域：美国、欧洲、俄罗斯、中东、东南亚、澳洲、日本、韩国、拉丁美洲
+- 无限滚动加载后续月份数据
+- 白天/夜晚双主题切换
+- 3D 星云背景 + 液态玻璃卡片
+- 每月5项大型活动 + 10项采购建议
+- PWA 离线缓存支持
