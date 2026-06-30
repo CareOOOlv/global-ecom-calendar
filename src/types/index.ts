@@ -39,6 +39,7 @@ export interface MonthlyData {
   promos: PlatformPromo[];
   procurement: ProcurementItem[];
   futureProcurement: ProcurementItem[];
+  subRegions?: { name: string; climate: string; temperature: string }[];
 }
 
 export interface RegionInfo {
@@ -46,6 +47,7 @@ export interface RegionInfo {
   currencyCode: string;
   currencySymbol: string;
   platforms: string[];
+  subRegions?: string[];
 }
 
 export interface RegionData {

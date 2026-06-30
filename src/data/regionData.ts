@@ -3,8 +3,8 @@ import type { RegionData } from '@/types';
 export const regions: RegionData[] = [
   {
     id: 'us',
-    name: '美国',
-    flag: '\uD83C\uDDFA\uD83C\uDDF8',
+    name: '北美',
+    flag: '🌎',
     info: {
       currency: '美元',
       currencyCode: 'USD',
@@ -19,6 +19,10 @@ export const regions: RegionData[] = [
         precipitation: '偶发阵雨',
         wind: '海风 3-4级',
         daylight: '日照充足 14-15h',
+        subRegions: [
+          { name: '美国', climate: '冬季严寒', temperature: '-10℃~10℃' },
+          { name: '加拿大', climate: '极地严寒', temperature: '-20℃~5℃' }
+        ],
         holidays: [
           { name: '新年 (New Year\'s Day)', date: '1月1日', importance: 'S' },
           { name: '马丁·路德·金纪念日', date: '1月第3个周一', importance: 'A' },
@@ -70,6 +74,10 @@ export const regions: RegionData[] = [
         precipitation: '偶发阵雨',
         wind: '海风 3-4级',
         daylight: '日照充足 14-15h',
+        subRegions: [
+          { name: '美国', climate: '冬末转暖', temperature: '-5℃~12℃' },
+          { name: '加拿大', climate: '严寒持续', temperature: '-15℃~5℃' }
+        ],
         holidays: [
           { name: '情人节 (Valentine\'s Day)', date: '2月14日', importance: 'S' },
           { name: '总统日', date: '2月第3个周一', importance: 'A' },
@@ -121,6 +129,10 @@ export const regions: RegionData[] = [
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
+        subRegions: [
+          { name: '美国', climate: '初春', temperature: '0℃~18℃' },
+          { name: '加拿大', climate: '冰雪融化', temperature: '-10℃~10℃' }
+        ],
         holidays: [
           { name: '圣帕特里克节 (St. Patrick\'s Day)', date: '3月17日', importance: 'A' },
           { name: '复活节 (Easter)', date: '3月/4月', importance: 'S' },
@@ -170,6 +182,10 @@ export const regions: RegionData[] = [
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
+        subRegions: [
+          { name: '美国', climate: '春季温和', temperature: '8℃~22℃' },
+          { name: '加拿大', climate: '春季短暂', temperature: '-2℃~15℃' }
+        ],
         holidays: [
           { name: '复活节 (Easter)', date: '4月', importance: 'S' },
           { name: '地球日 (Earth Day)', date: '4月22日', importance: 'A' },
@@ -221,6 +237,10 @@ export const regions: RegionData[] = [
         precipitation: '秋雨绵绵',
         wind: '北风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '美国', climate: '春末夏初', temperature: '12℃~26℃' },
+          { name: '加拿大', climate: '温和凉爽', temperature: '5℃~20℃' }
+        ],
         holidays: [
           { name: '母亲节 (Mother\'s Day)', date: '5月第2个周日', importance: 'S' },
           { name: '阵亡将士纪念日', date: '5月最后周一', importance: 'A' },
@@ -272,6 +292,10 @@ export const regions: RegionData[] = [
         precipitation: '冬季降雨',
         wind: '西风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '美国', climate: '初夏', temperature: '18℃~32℃' },
+          { name: '加拿大', climate: '初夏宜人', temperature: '10℃~25℃' }
+        ],
         holidays: [
           { name: '父亲节 (Father\'s Day)', date: '6月第3个周日', importance: 'S' },
           { name: '骄傲月 (Pride Month)', date: '整个6月', importance: 'A' },
@@ -324,6 +348,10 @@ export const regions: RegionData[] = [
         precipitation: '冬季降雨',
         wind: '西风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '美国', climate: '盛夏炎热', temperature: '22℃~38℃' },
+          { name: '加拿大', climate: '夏季温暖', temperature: '15℃~28℃' }
+        ],
         holidays: [
           { name: '独立日 (Independence Day)', date: '7月4日', importance: 'S' },
           { name: 'Prime Day', date: '7月中旬', importance: 'S' },
@@ -374,6 +402,10 @@ export const regions: RegionData[] = [
         precipitation: '冬季降雨',
         wind: '西风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '美国', climate: '夏末', temperature: '20℃~35℃' },
+          { name: '加拿大', climate: '凉爽初秋', temperature: '12℃~25℃' }
+        ],
         holidays: [
           { name: '返校季 (Back to School)', date: '8月整月', importance: 'S' },
           { name: '劳动节预热', date: '8月末', importance: 'B' },
@@ -424,6 +456,10 @@ export const regions: RegionData[] = [
         precipitation: '偶有小雨',
         wind: '微风 2-4级',
         daylight: '日照充足 12-14h',
+        subRegions: [
+          { name: '美国', climate: '初秋', temperature: '15℃~30℃' },
+          { name: '加拿大', climate: '秋高气爽', temperature: '5℃~20℃' }
+        ],
         holidays: [
           { name: '劳动节 (Labor Day)', date: '9月第1个周一', importance: 'A' },
           { name: '祖父母节', date: '9月第1个周日', importance: 'B' },
@@ -475,6 +511,10 @@ export const regions: RegionData[] = [
         precipitation: '偶有小雨',
         wind: '微风 2-4级',
         daylight: '日照充足 12-14h',
+        subRegions: [
+          { name: '美国', climate: '秋季凉爽', temperature: '8℃~22℃' },
+          { name: '加拿大', climate: '深秋寒冷', temperature: '-2℃~15℃' }
+        ],
         holidays: [
           { name: '万圣节 (Halloween)', date: '10月31日', importance: 'S' },
           { name: '哥伦布日', date: '10月第2个周一', importance: 'B' },
@@ -524,6 +564,10 @@ export const regions: RegionData[] = [
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
+        subRegions: [
+          { name: '美国', climate: '深秋初冬', temperature: '0℃~15℃' },
+          { name: '加拿大', climate: '初冬严寒', temperature: '-10℃~10℃' }
+        ],
         holidays: [
           { name: '感恩节 (Thanksgiving)', date: '11月第4个周四', importance: 'S' },
           { name: '黑色星期五 (Black Friday)', date: '11月第4个周五', importance: 'S' },
@@ -577,6 +621,10 @@ export const regions: RegionData[] = [
         precipitation: '偶发阵雨',
         wind: '海风 3-4级',
         daylight: '日照充足 14-15h',
+        subRegions: [
+          { name: '美国', climate: '冬季寒冷', temperature: '-5℃~10℃' },
+          { name: '加拿大', climate: '严寒冬季', temperature: '-20℃~5℃' }
+        ],
         holidays: [
           { name: '圣诞节 (Christmas)', date: '12月25日', importance: 'S' },
           { name: '新年前夜 (New Year\'s Eve)', date: '12月31日', importance: 'S' },
@@ -641,6 +689,13 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '英国', climate: '阴冷潮湿', temperature: '2℃~10℃' },
+          { name: '法国', climate: '冬季湿冷', temperature: '-5℃~8℃' },
+          { name: '德国', climate: '冬季寒冷', temperature: '-3℃~5℃' },
+          { name: '西班牙', climate: '冬季温和', temperature: '5℃~15℃' },
+          { name: '葡萄牙', climate: '冬季温和', temperature: '5℃~15℃' }
+        ],
         holidays: [
           { name: '新年 (New Year)', date: '1月1日', importance: 'S' },
           { name: '主显节 (Epiphany)', date: '1月6日', importance: 'B' },
@@ -690,6 +745,13 @@ export const regions: RegionData[] = [
         precipitation: '雨夹雪/小雨',
         wind: '多变 3-5级',
         daylight: '日照渐长 10-11h',
+        subRegions: [
+          { name: '英国', climate: '冬末多雨', temperature: '3℃~12℃' },
+          { name: '法国', climate: '冬末转暖', temperature: '-2℃~10℃' },
+          { name: '德国', climate: '冬末转暖', temperature: '-2℃~8℃' },
+          { name: '西班牙', climate: '早春凉爽', temperature: '6℃~17℃' },
+          { name: '葡萄牙', climate: '早春凉爽', temperature: '6℃~17℃' }
+        ],
         holidays: [
           { name: '情人节 (Valentine\'s Day)', date: '2月14日', importance: 'S' },
           { name: '忏悔星期二 (Mardi Gras)', date: '2月/3月', importance: 'B' },
@@ -740,6 +802,13 @@ export const regions: RegionData[] = [
         precipitation: '春雨频繁',
         wind: '东南风 3-4级',
         daylight: '日照渐长 11-13h',
+        subRegions: [
+          { name: '英国', climate: '早春凉爽', temperature: '5℃~15℃' },
+          { name: '法国', climate: '早春凉爽', temperature: '0℃~13℃' },
+          { name: '德国', climate: '早春凉爽', temperature: '1℃~10℃' },
+          { name: '西班牙', climate: '温和宜人', temperature: '8℃~20℃' },
+          { name: '葡萄牙', climate: '温和宜人', temperature: '8℃~20℃' }
+        ],
         holidays: [
           { name: '圣帕特里克节', date: '3月17日', importance: 'A' },
           { name: '母亲节(英国)', date: '3月第4个周日', importance: 'A' },
@@ -787,6 +856,13 @@ export const regions: RegionData[] = [
         precipitation: '偶有小雨',
         wind: '微风 2-4级',
         daylight: '日照充足 12-14h',
+        subRegions: [
+          { name: '英国', climate: '温和多雨', temperature: '8℃~18℃' },
+          { name: '法国', climate: '温和多雨', temperature: '4℃~16℃' },
+          { name: '德国', climate: '温和多雨', temperature: '5℃~15℃' },
+          { name: '西班牙', climate: '温暖干燥', temperature: '10℃~22℃' },
+          { name: '葡萄牙', climate: '温暖干燥', temperature: '10℃~22℃' }
+        ],
         holidays: [
           { name: '复活节 (Easter)', date: '4月', importance: 'S' },
           { name: '愚人节', date: '4月1日', importance: 'B' },
@@ -837,6 +913,13 @@ export const regions: RegionData[] = [
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
+        subRegions: [
+          { name: '英国', climate: '凉爽', temperature: '12℃~22℃' },
+          { name: '法国', climate: '温暖宜人', temperature: '8℃~20℃' },
+          { name: '德国', climate: '温暖', temperature: '10℃~20℃' },
+          { name: '西班牙', climate: '初夏温暖', temperature: '14℃~25℃' },
+          { name: '葡萄牙', climate: '初夏温暖', temperature: '14℃~25℃' }
+        ],
         holidays: [
           { name: '五一劳动节', date: '5月1日', importance: 'A' },
           { name: '母亲节(多数国家)', date: '5月第2个周日', importance: 'S' },
@@ -888,6 +971,13 @@ export const regions: RegionData[] = [
         precipitation: '雷阵雨/暴雨',
         wind: '南风 3-5级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '英国', climate: '初夏温和', temperature: '15℃~25℃' },
+          { name: '法国', climate: '初夏舒适', temperature: '12℃~24℃' },
+          { name: '德国', climate: '初夏温和', temperature: '13℃~23℃' },
+          { name: '西班牙', climate: '夏季炎热', temperature: '18℃~30℃' },
+          { name: '葡萄牙', climate: '夏季炎热', temperature: '18℃~30℃' }
+        ],
         holidays: [
           { name: '父亲节 (Father\'s Day)', date: '6月第3个周日', importance: 'S' },
           { name: '夏至日 (Midsummer)', date: '6月21日', importance: 'A' },
@@ -937,6 +1027,13 @@ export const regions: RegionData[] = [
         precipitation: '对流雨频发',
         wind: '闷热少风 1-3级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '英国', climate: '温和夏季', temperature: '18℃~28℃' },
+          { name: '法国', climate: '夏季温暖', temperature: '15℃~26℃' },
+          { name: '德国', climate: '夏季温暖', temperature: '16℃~27℃' },
+          { name: '西班牙', climate: '盛夏酷热', temperature: '22℃~35℃' },
+          { name: '葡萄牙', climate: '盛夏炎热', temperature: '22℃~35℃' }
+        ],
         holidays: [
           { name: '法国国庆日 (Bastille Day)', date: '7月14日', importance: 'A' },
           { name: '比利时国庆日', date: '7月21日', importance: 'B' },
@@ -985,6 +1082,13 @@ export const regions: RegionData[] = [
         precipitation: '台风/暴雨',
         wind: '多变 5-8级',
         daylight: '日照渐短 13-14h',
+        subRegions: [
+          { name: '英国', climate: '夏末凉爽', temperature: '18℃~28℃' },
+          { name: '法国', climate: '夏末温暖', temperature: '15℃~25℃' },
+          { name: '德国', climate: '夏末温和', temperature: '16℃~26℃' },
+          { name: '西班牙', climate: '夏末炎热', temperature: '22℃~34℃' },
+          { name: '葡萄牙', climate: '夏末炎热', temperature: '22℃~34℃' }
+        ],
         holidays: [
           { name: '夏季银行假日(英)', date: '8月最后周一', importance: 'A' },
           { name: '圣母升天节', date: '8月15日', importance: 'B' },
@@ -1034,6 +1138,13 @@ export const regions: RegionData[] = [
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
+        subRegions: [
+          { name: '英国', climate: '秋凉多雨', temperature: '15℃~24℃' },
+          { name: '法国', climate: '秋凉', temperature: '12℃~22℃' },
+          { name: '德国', climate: '秋凉', temperature: '12℃~22℃' },
+          { name: '西班牙', climate: '初秋温暖', temperature: '18℃~30℃' },
+          { name: '葡萄牙', climate: '初秋温暖', temperature: '18℃~30℃' }
+        ],
         holidays: [
           { name: '慕尼黑啤酒节 (Oktoberfest)', date: '9月末-10月初', importance: 'S' },
         ],
@@ -1082,6 +1193,13 @@ export const regions: RegionData[] = [
         precipitation: '秋雨绵绵',
         wind: '北风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '英国', climate: '阴冷多风', temperature: '10℃~18℃' },
+          { name: '法国', climate: '凉爽多雨', temperature: '7℃~16℃' },
+          { name: '德国', climate: '凉爽多雨', temperature: '8℃~16℃' },
+          { name: '西班牙', climate: '秋凉', temperature: '14℃~24℃' },
+          { name: '葡萄牙', climate: '秋凉', temperature: '14℃~24℃' }
+        ],
         holidays: [
           { name: '慕尼黑啤酒节', date: '10月初', importance: 'S' },
           { name: '万圣节 (Halloween)', date: '10月31日', importance: 'A' },
@@ -1129,6 +1247,13 @@ export const regions: RegionData[] = [
         precipitation: '初雪/雨夹雪',
         wind: '寒风 4-6级',
         daylight: '日照最短 9-10h',
+        subRegions: [
+          { name: '英国', climate: '深秋湿冷', temperature: '6℃~13℃' },
+          { name: '法国', climate: '初冬寒冷', temperature: '2℃~10℃' },
+          { name: '德国', climate: '初冬寒冷', temperature: '3℃~10℃' },
+          { name: '西班牙', climate: '初冬温和', temperature: '10℃~20℃' },
+          { name: '葡萄牙', climate: '初冬温和', temperature: '10℃~20℃' }
+        ],
         holidays: [
           { name: '停战日/国殇日', date: '11月11日', importance: 'A' },
           { name: '黑色星期五', date: '11月第4个周五', importance: 'S' },
@@ -1178,6 +1303,13 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '英国', climate: '冬季阴冷', temperature: '3℃~10℃' },
+          { name: '法国', climate: '冬季湿冷', temperature: '-2℃~8℃' },
+          { name: '德国', climate: '冬季寒冷', temperature: '-1℃~7℃' },
+          { name: '西班牙', climate: '冬季温和', temperature: '8℃~16℃' },
+          { name: '葡萄牙', climate: '冬季温和', temperature: '8℃~16℃' }
+        ],
         holidays: [
           { name: '圣诞节 (Christmas)', date: '12月25日', importance: 'S' },
           { name: '节礼日 (Boxing Day)', date: '12月26日', importance: 'A' },
@@ -1242,6 +1374,11 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '严寒', temperature: '-15℃~-5℃' },
+          { name: '乌克兰', climate: '寒冷', temperature: '-8℃~-2℃' },
+          { name: '波兰', climate: '冬季寒冷', temperature: '-10℃~-3℃' }
+        ],
         holidays: [
           { name: '新年 (New Year)', date: '1月1-8日', importance: 'S' },
           { name: '东正教圣诞节', date: '1月7日', importance: 'S' },
@@ -1292,6 +1429,11 @@ export const regions: RegionData[] = [
         precipitation: '雨夹雪/小雨',
         wind: '多变 3-5级',
         daylight: '日照渐长 10-11h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '严寒稍缓', temperature: '-12℃~-3℃' },
+          { name: '乌克兰', climate: '冬末转暖', temperature: '-5℃~0℃' },
+          { name: '波兰', climate: '冬末转暖', temperature: '-8℃~2℃' }
+        ],
         holidays: [
           { name: '祖国保卫者日', date: '2月23日', importance: 'A' },
           { name: '谢肉节( Maslenitsa)', date: '2月/3月', importance: 'A' },
@@ -1338,6 +1480,11 @@ export const regions: RegionData[] = [
         precipitation: '春雨频繁',
         wind: '东南风 3-4级',
         daylight: '日照渐长 11-13h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '冬末转暖', temperature: '-5℃~5℃' },
+          { name: '乌克兰', climate: '早春凉爽', temperature: '0℃~8℃' },
+          { name: '波兰', climate: '早春凉爽', temperature: '-3℃~7℃' }
+        ],
         holidays: [
           { name: '国际妇女节', date: '3月8日', importance: 'S' },
           { name: '谢肉节', date: '3月初', importance: 'A' },
@@ -1384,6 +1531,11 @@ export const regions: RegionData[] = [
         precipitation: '偶有小雨',
         wind: '微风 2-4级',
         daylight: '日照充足 12-14h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '春季凉爽', temperature: '2℃~12℃' },
+          { name: '乌克兰', climate: '温和', temperature: '6℃~15℃' },
+          { name: '波兰', climate: '温和', temperature: '4℃~14℃' }
+        ],
         holidays: [
           { name: '复活节 (Paskha)', date: '4月', importance: 'S' },
           { name: '宇航员日', date: '4月12日', importance: 'B' },
@@ -1430,6 +1582,11 @@ export const regions: RegionData[] = [
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '温和', temperature: '10℃~20℃' },
+          { name: '乌克兰', climate: '温暖', temperature: '12℃~22℃' },
+          { name: '波兰', climate: '温暖', temperature: '10℃~20℃' }
+        ],
         holidays: [
           { name: '劳动节', date: '5月1日', importance: 'A' },
           { name: '胜利日 (Victory Day)', date: '5月9日', importance: 'S' },
@@ -1478,6 +1635,11 @@ export const regions: RegionData[] = [
         precipitation: '雷阵雨/暴雨',
         wind: '南风 3-5级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '初夏', temperature: '15℃~25℃' },
+          { name: '乌克兰', climate: '初夏', temperature: '18℃~26℃' },
+          { name: '波兰', climate: '初夏', temperature: '15℃~24℃' }
+        ],
         holidays: [
           { name: '俄罗斯日', date: '6月12日', importance: 'A' },
           { name: '白昼节', date: '6月21日', importance: 'B' },
@@ -1525,6 +1687,11 @@ export const regions: RegionData[] = [
         precipitation: '对流雨频发',
         wind: '闷热少风 1-3级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '夏季温暖', temperature: '18℃~28℃' },
+          { name: '乌克兰', climate: '夏季温暖', temperature: '20℃~30℃' },
+          { name: '波兰', climate: '夏季温暖', temperature: '18℃~27℃' }
+        ],
         holidays: [
           { name: '渔民节', date: '7月第2个周日', importance: 'B' },
           { name: '圣徒彼得和保罗日', date: '7月12日', importance: 'B' },
@@ -1571,6 +1738,11 @@ export const regions: RegionData[] = [
         precipitation: '台风/暴雨',
         wind: '多变 5-8级',
         daylight: '日照渐短 13-14h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '夏末凉爽', temperature: '16℃~25℃' },
+          { name: '乌克兰', climate: '夏末', temperature: '18℃~28℃' },
+          { name: '波兰', climate: '夏末', temperature: '16℃~25℃' }
+        ],
         holidays: [
           { name: '空军节', date: '8月第3个周日', importance: 'B' },
           { name: '马 respberry收获季', date: '8月', importance: 'B' },
@@ -1617,6 +1789,11 @@ export const regions: RegionData[] = [
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '秋凉', temperature: '10℃~20℃' },
+          { name: '乌克兰', climate: '秋凉', temperature: '12℃~22℃' },
+          { name: '波兰', climate: '秋凉', temperature: '10℃~20℃' }
+        ],
         holidays: [
           { name: '知识日', date: '9月1日', importance: 'A' },
           { name: '俄罗斯军械师日', date: '9月19日', importance: 'B' },
@@ -1663,6 +1840,11 @@ export const regions: RegionData[] = [
         precipitation: '秋雨绵绵',
         wind: '北风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '深秋', temperature: '2℃~12℃' },
+          { name: '乌克兰', climate: '凉爽', temperature: '6℃~15℃' },
+          { name: '波兰', climate: '凉爽', temperature: '4℃~14℃' }
+        ],
         holidays: [
           { name: '教师节', date: '10月第1个周日', importance: 'A' },
           { name: '祖国统一日', date: '11月4日(邻近)', importance: 'B' },
@@ -1709,6 +1891,11 @@ export const regions: RegionData[] = [
         precipitation: '初雪/雨夹雪',
         wind: '寒风 4-6级',
         daylight: '日照最短 9-10h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '初冬严寒', temperature: '-5℃~5℃' },
+          { name: '乌克兰', climate: '初冬寒冷', temperature: '-2℃~8℃' },
+          { name: '波兰', climate: '初冬寒冷', temperature: '-3℃~7℃' }
+        ],
         holidays: [
           { name: '祖国统一日', date: '11月4日', importance: 'A' },
           { name: ' Mother\'s Day', date: '11月最后周日', importance: 'B' },
@@ -1757,6 +1944,11 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '俄罗斯西部', climate: '严寒', temperature: '-12℃~-3℃' },
+          { name: '乌克兰', climate: '寒冷', temperature: '-8℃~2℃' },
+          { name: '波兰', climate: '冬季寒冷', temperature: '-10℃~0℃' }
+        ],
         holidays: [
           { name: '新年准备期', date: '12月全月', importance: 'S' },
           { name: '宪法日', date: '12月12日', importance: 'B' },
@@ -1818,6 +2010,13 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '沙特', climate: '冬季凉爽', temperature: '8℃~20℃' },
+          { name: '阿联酋', climate: '冬季宜人', temperature: '15℃~24℃' },
+          { name: '卡塔尔', climate: '冬季凉爽', temperature: '15℃~22℃' },
+          { name: '土耳其', climate: '冬季寒冷', temperature: '0℃~10℃' },
+          { name: '以色列', climate: '冬季温和', temperature: '8℃~18℃' }
+        ],
         holidays: [
           { name: '先知诞辰 (Mawlid)', date: '伊斯兰历3月', importance: 'A' },
           { name: '新年', date: '1月1日', importance: 'B' },
@@ -1865,6 +2064,13 @@ export const regions: RegionData[] = [
         precipitation: '雨夹雪/小雨',
         wind: '多变 3-5级',
         daylight: '日照渐长 10-11h',
+        subRegions: [
+          { name: '沙特', climate: '春季温和', temperature: '12℃~24℃' },
+          { name: '阿联酋', climate: '春季温和', temperature: '18℃~28℃' },
+          { name: '卡塔尔', climate: '春季温和', temperature: '18℃~26℃' },
+          { name: '土耳其', climate: '冬末转暖', temperature: '4℃~14℃' },
+          { name: '以色列', climate: '早春凉爽', temperature: '10℃~20℃' }
+        ],
         holidays: [
           { name: '阿联酋国庆(装饰延续)', date: '2月', importance: 'B' },
           { name: '先知诞辰', date: '伊斯兰历', importance: 'A' },
@@ -1911,6 +2117,13 @@ export const regions: RegionData[] = [
         precipitation: '春雨频繁',
         wind: '东南风 3-4级',
         daylight: '日照渐长 11-13h',
+        subRegions: [
+          { name: '沙特', climate: '初夏渐热', temperature: '18℃~30℃' },
+          { name: '阿联酋', climate: '初夏炎热', temperature: '22℃~32℃' },
+          { name: '卡塔尔', climate: '初夏渐热', temperature: '22℃~30℃' },
+          { name: '土耳其', climate: '早春凉爽', temperature: '10℃~20℃' },
+          { name: '以色列', climate: '温和宜人', temperature: '14℃~24℃' }
+        ],
         holidays: [
           { name: '登宵节 (Isra and Mi\'raj)', date: '伊斯兰历7月27日', importance: 'A' },
           { name: '母亲结(部分国家)', date: '3月21日', importance: 'B' },
@@ -1958,6 +2171,13 @@ export const regions: RegionData[] = [
         precipitation: '偶有小雨',
         wind: '微风 2-4级',
         daylight: '日照充足 12-14h',
+        subRegions: [
+          { name: '沙特', climate: '夏季炎热', temperature: '25℃~38℃' },
+          { name: '阿联酋', climate: '夏季炎热', temperature: '28℃~40℃' },
+          { name: '卡塔尔', climate: '夏季炎热', temperature: '28℃~38℃' },
+          { name: '土耳其', climate: '温和多雨', temperature: '15℃~25℃' },
+          { name: '以色列', climate: '温暖干燥', temperature: '20℃~30℃' }
+        ],
         holidays: [
           { name: '斋月 (Ramadan)', date: '伊斯兰历9月', importance: 'S' },
           { name: '开斋节 (Eid al-Fitr)', date: '伊斯兰历10月初', importance: 'S' },
@@ -2008,6 +2228,13 @@ export const regions: RegionData[] = [
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
+        subRegions: [
+          { name: '沙特', climate: '酷暑', temperature: '30℃~45℃' },
+          { name: '阿联酋', climate: '酷暑', temperature: '32℃~45℃' },
+          { name: '卡塔尔', climate: '酷暑', temperature: '32℃~43℃' },
+          { name: '土耳其', climate: '温暖', temperature: '20℃~30℃' },
+          { name: '以色列', climate: '初夏温暖', temperature: '25℃~35℃' }
+        ],
         holidays: [
           { name: '开斋节 (Eid al-Fitr)', date: '伊斯兰历10月', importance: 'S' },
           { name: '阿拉伯团结日', date: '5月10日', importance: 'B' },
@@ -2054,6 +2281,13 @@ export const regions: RegionData[] = [
         precipitation: '雷阵雨/暴雨',
         wind: '南风 3-5级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '沙特', climate: '盛夏酷热', temperature: '32℃~48℃' },
+          { name: '阿联酋', climate: '盛夏酷热', temperature: '34℃~48℃' },
+          { name: '卡塔尔', climate: '盛夏酷热', temperature: '34℃~46℃' },
+          { name: '土耳其', climate: '初夏', temperature: '25℃~35℃' },
+          { name: '以色列', climate: '夏季炎热', temperature: '28℃~38℃' }
+        ],
         holidays: [
           { name: '朝觐季准备', date: '伊斯兰历12月', importance: 'A' },
           { name: '宰牲节 (Eid al-Adha)', date: '伊斯兰历12月', importance: 'S' },
@@ -2101,6 +2335,13 @@ export const regions: RegionData[] = [
         precipitation: '对流雨频发',
         wind: '闷热少风 1-3级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '沙特', climate: '盛夏酷热', temperature: '35℃~50℃' },
+          { name: '阿联酋', climate: '盛夏酷热', temperature: '35℃~50℃' },
+          { name: '卡塔尔', climate: '盛夏酷热', temperature: '35℃~48℃' },
+          { name: '土耳其', climate: '夏季炎热', temperature: '28℃~38℃' },
+          { name: '以色列', climate: '盛夏炎热', temperature: '30℃~40℃' }
+        ],
         holidays: [
           { name: '伊斯兰新年', date: '伊斯兰历1月1日', importance: 'A' },
           { name: '阿舒拉日', date: '伊斯兰历1月10日', importance: 'A' },
@@ -2147,6 +2388,13 @@ export const regions: RegionData[] = [
         precipitation: '台风/暴雨',
         wind: '多变 5-8级',
         daylight: '日照渐短 13-14h',
+        subRegions: [
+          { name: '沙特', climate: '夏末酷热', temperature: '33℃~48℃' },
+          { name: '阿联酋', climate: '夏末酷热', temperature: '34℃~48℃' },
+          { name: '卡塔尔', climate: '夏末酷热', temperature: '34℃~46℃' },
+          { name: '土耳其', climate: '夏末温暖', temperature: '25℃~35℃' },
+          { name: '以色列', climate: '夏末炎热', temperature: '28℃~38℃' }
+        ],
         holidays: [
           { name: '阿联酋国庆日预热', date: '11月(邻近)', importance: 'B' },
           { name: '先知登霄', date: '伊斯兰历', importance: 'B' },
@@ -2193,6 +2441,13 @@ export const regions: RegionData[] = [
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
+        subRegions: [
+          { name: '沙特', climate: '初秋炎热', temperature: '28℃~40℃' },
+          { name: '阿联酋', climate: '初秋炎热', temperature: '30℃~42℃' },
+          { name: '卡塔尔', climate: '初秋炎热', temperature: '30℃~40℃' },
+          { name: '土耳其', climate: '秋凉', temperature: '18℃~28℃' },
+          { name: '以色列', climate: '初秋温暖', temperature: '22℃~32℃' }
+        ],
         holidays: [
           { name: '沙特国庆日', date: '9月23日', importance: 'A' },
           { name: '先知诞辰', date: '伊斯兰历3月', importance: 'A' },
@@ -2239,6 +2494,13 @@ export const regions: RegionData[] = [
         precipitation: '秋雨绵绵',
         wind: '北风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '沙特', climate: '秋季温和', temperature: '20℃~32℃' },
+          { name: '阿联酋', climate: '秋季宜人', temperature: '24℃~36℃' },
+          { name: '卡塔尔', climate: '秋季温和', temperature: '24℃~34℃' },
+          { name: '土耳其', climate: '凉爽多雨', temperature: '12℃~22℃' },
+          { name: '以色列', climate: '秋凉', temperature: '16℃~26℃' }
+        ],
         holidays: [
           { name: '阿联酋国庆日', date: '12月2日(邻近)', importance: 'A' },
           { name: '万圣节前夜(外来)', date: '10月31日', importance: 'B' },
@@ -2285,6 +2547,13 @@ export const regions: RegionData[] = [
         precipitation: '初雪/雨夹雪',
         wind: '寒风 4-6级',
         daylight: '日照最短 9-10h',
+        subRegions: [
+          { name: '沙特', climate: '初冬凉爽', temperature: '12℃~24℃' },
+          { name: '阿联酋', climate: '初冬凉爽', temperature: '18℃~28℃' },
+          { name: '卡塔尔', climate: '初冬凉爽', temperature: '18℃~26℃' },
+          { name: '土耳其', climate: '初冬寒冷', temperature: '6℃~16℃' },
+          { name: '以色列', climate: '初冬温和', temperature: '10℃~20℃' }
+        ],
         holidays: [
           { name: '阿联酋国庆日', date: '12月2日(邻近)', importance: 'A' },
           { name: '双十一(外来影响)', date: '11月11日', importance: 'B' },
@@ -2335,6 +2604,13 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '沙特', climate: '冬季凉爽', temperature: '8℃~20℃' },
+          { name: '阿联酋', climate: '冬季宜人', temperature: '15℃~24℃' },
+          { name: '卡塔尔', climate: '冬季凉爽', temperature: '15℃~22℃' },
+          { name: '土耳其', climate: '冬季寒冷', temperature: '2℃~12℃' },
+          { name: '以色列', climate: '冬季温和', temperature: '8℃~18℃' }
+        ],
         holidays: [
           { name: '阿联酋国庆日', date: '12月2日', importance: 'A' },
           { name: '圣诞节(部分地区)', date: '12月25日', importance: 'B' },
@@ -2398,6 +2674,14 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '新加坡', climate: '雨季炎热', temperature: '24℃~32℃' },
+          { name: '马来西亚', climate: '雨季炎热', temperature: '24℃~32℃' },
+          { name: '泰国', climate: '凉季干燥', temperature: '24℃~34℃' },
+          { name: '越南', climate: '冬季凉爽', temperature: '15℃~25℃' },
+          { name: '印尼', climate: '雨季炎热', temperature: '24℃~32℃' },
+          { name: '菲律宾', climate: '旱季凉爽', temperature: '25℃~33℃' }
+        ],
         holidays: [
           { name: '新年 (New Year)', date: '1月1日', importance: 'A' },
           { name: '春节 (Chinese New Year)', date: '1月/2月', importance: 'S' },
@@ -2447,6 +2731,14 @@ export const regions: RegionData[] = [
         precipitation: '雨夹雪/小雨',
         wind: '多变 3-5级',
         daylight: '日照渐长 10-11h',
+        subRegions: [
+          { name: '新加坡', climate: '雨季炎热', temperature: '24℃~32℃' },
+          { name: '马来西亚', climate: '雨季炎热', temperature: '24℃~32℃' },
+          { name: '泰国', climate: '凉季转热', temperature: '25℃~35℃' },
+          { name: '越南', climate: '冬末转暖', temperature: '17℃~27℃' },
+          { name: '印尼', climate: '雨季炎热', temperature: '24℃~32℃' },
+          { name: '菲律宾', climate: '旱季温暖', temperature: '25℃~33℃' }
+        ],
         holidays: [
           { name: '春节 (Chinese New Year)', date: '1月/2月', importance: 'S' },
           { name: '万佛节 (Makha Bucha)', date: '2月/3月', importance: 'A' },
@@ -2496,6 +2788,14 @@ export const regions: RegionData[] = [
         precipitation: '春雨频繁',
         wind: '东南风 3-4级',
         daylight: '日照渐长 11-13h',
+        subRegions: [
+          { name: '新加坡', climate: '季风转雨', temperature: '25℃~33℃' },
+          { name: '马来西亚', climate: '季风多雨', temperature: '26℃~36℃' },
+          { name: '泰国', climate: '热季炎热', temperature: '28℃~38℃' },
+          { name: '越南', climate: '春季温暖', temperature: '20℃~30℃' },
+          { name: '印尼', climate: '雨季', temperature: '25℃~33℃' },
+          { name: '菲律宾', climate: '热季炎热', temperature: '26℃~34℃' }
+        ],
         holidays: [
           { name: '泼水节预热', date: '4月13-15日(邻近)', importance: 'B' },
           { name: '巴厘新年(Nyepi)', date: '3月', importance: 'A' },
@@ -2544,6 +2844,14 @@ export const regions: RegionData[] = [
         precipitation: '偶有小雨',
         wind: '微风 2-4级',
         daylight: '日照充足 12-14h',
+        subRegions: [
+          { name: '新加坡', climate: '炎热多雨', temperature: '25℃~33℃' },
+          { name: '马来西亚', climate: '炎热多雨', temperature: '26℃~36℃' },
+          { name: '泰国', climate: '热季', temperature: '28℃~38℃' },
+          { name: '越南', climate: '热季炎热', temperature: '22℃~32℃' },
+          { name: '印尼', climate: '过渡雨季', temperature: '25℃~33℃' },
+          { name: '菲律宾', climate: '热季炎热', temperature: '26℃~34℃' }
+        ],
         holidays: [
           { name: '泼水节 (Songkran)', date: '4月13-15日', importance: 'S' },
           { name: '开斋节(部分国家)', date: '伊斯兰历', importance: 'A' },
@@ -2593,6 +2901,14 @@ export const regions: RegionData[] = [
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
+        subRegions: [
+          { name: '新加坡', climate: '季风多雨', temperature: '25℃~33℃' },
+          { name: '马来西亚', climate: '季风多雨', temperature: '26℃~36℃' },
+          { name: '泰国', climate: '热季转雨', temperature: '28℃~38℃' },
+          { name: '越南', climate: '季风多雨', temperature: '24℃~34℃' },
+          { name: '印尼', climate: '干季', temperature: '25℃~33℃' },
+          { name: '菲律宾', climate: '雨季开始', temperature: '26℃~34℃' }
+        ],
         holidays: [
           { name: '卫塞节 (Vesak)', date: '5月满月日', importance: 'A' },
           { name: '国王诞辰(泰)', date: '7月28日(邻近)', importance: 'B' },
@@ -2641,6 +2957,14 @@ export const regions: RegionData[] = [
         precipitation: '雷阵雨/暴雨',
         wind: '南风 3-5级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '新加坡', climate: '雨季高峰', temperature: '25℃~33℃' },
+          { name: '马来西亚', climate: '雨季高峰', temperature: '26℃~36℃' },
+          { name: '泰国', climate: '雨季多雨', temperature: '28℃~38℃' },
+          { name: '越南', climate: '雨季多雨', temperature: '25℃~35℃' },
+          { name: '印尼', climate: '干季炎热', temperature: '25℃~33℃' },
+          { name: '菲律宾', climate: '雨季多雨', temperature: '26℃~34℃' }
+        ],
         holidays: [
           { name: '开斋节 (Eid al-Fitr)', date: '伊斯兰历', importance: 'S' },
           { name: '端午节', date: '农历五月初五', importance: 'A' },
@@ -2689,6 +3013,14 @@ export const regions: RegionData[] = [
         precipitation: '对流雨频发',
         wind: '闷热少风 1-3级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '新加坡', climate: '雨季', temperature: '25℃~33℃' },
+          { name: '马来西亚', climate: '雨季', temperature: '26℃~35℃' },
+          { name: '泰国', climate: '雨季', temperature: '28℃~36℃' },
+          { name: '越南', climate: '夏季炎热', temperature: '25℃~35℃' },
+          { name: '印尼', climate: '干季', temperature: '25℃~33℃' },
+          { name: '菲律宾', climate: '雨季', temperature: '26℃~34℃' }
+        ],
         holidays: [
           { name: '阿舒拉节', date: '伊斯兰历', importance: 'A' },
           { name: '守夏节', date: '7月/8月', importance: 'B' },
@@ -2737,6 +3069,14 @@ export const regions: RegionData[] = [
         precipitation: '台风/暴雨',
         wind: '多变 5-8级',
         daylight: '日照渐短 13-14h',
+        subRegions: [
+          { name: '新加坡', climate: '季风转雨', temperature: '25℃~33℃' },
+          { name: '马来西亚', climate: '季风转雨', temperature: '26℃~35℃' },
+          { name: '泰国', climate: '雨季', temperature: '28℃~36℃' },
+          { name: '越南', climate: '雨季', temperature: '25℃~35℃' },
+          { name: '印尼', climate: '干季', temperature: '25℃~33℃' },
+          { name: '菲律宾', climate: '雨季', temperature: '26℃~34℃' }
+        ],
         holidays: [
           { name: '泰国母亲节', date: '8月12日', importance: 'A' },
           { name: '新加坡国庆日', date: '8月9日', importance: 'A' },
@@ -2786,6 +3126,14 @@ export const regions: RegionData[] = [
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
+        subRegions: [
+          { name: '新加坡', climate: '炎热潮湿', temperature: '25℃~33℃' },
+          { name: '马来西亚', climate: '炎热潮湿', temperature: '26℃~35℃' },
+          { name: '泰国', climate: '雨季', temperature: '28℃~36℃' },
+          { name: '越南', climate: '雨季', temperature: '24℃~34℃' },
+          { name: '印尼', climate: '干季转雨', temperature: '25℃~33℃' },
+          { name: '菲律宾', climate: '雨季', temperature: '26℃~34℃' }
+        ],
         holidays: [
           { name: '中秋节', date: '农历八月十五', importance: 'S' },
           { name: '九皇斋节', date: '农历九月初一', importance: 'A' },
@@ -2835,6 +3183,14 @@ export const regions: RegionData[] = [
         precipitation: '秋雨绵绵',
         wind: '北风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '新加坡', climate: '季风多雨', temperature: '25℃~33℃' },
+          { name: '马来西亚', climate: '季风多雨', temperature: '26℃~35℃' },
+          { name: '泰国', climate: '季风转雨', temperature: '28℃~36℃' },
+          { name: '越南', climate: '季风多雨', temperature: '22℃~32℃' },
+          { name: '印尼', climate: '雨季', temperature: '25℃~33℃' },
+          { name: '菲律宾', climate: '季风多雨', temperature: '26℃~34℃' }
+        ],
         holidays: [
           { name: '排灯节 (Diwali)', date: '10月/11月', importance: 'S' },
           { name: '水灯节 (Loy Krathong)', date: '泰历12月', importance: 'A' },
@@ -2885,6 +3241,14 @@ export const regions: RegionData[] = [
         precipitation: '初雪/雨夹雪',
         wind: '寒风 4-6级',
         daylight: '日照最短 9-10h',
+        subRegions: [
+          { name: '新加坡', climate: '雨季', temperature: '24℃~32℃' },
+          { name: '马来西亚', climate: '雨季', temperature: '25℃~34℃' },
+          { name: '泰国', climate: '凉季', temperature: '27℃~35℃' },
+          { name: '越南', climate: '秋季凉爽', temperature: '18℃~28℃' },
+          { name: '印尼', climate: '雨季', temperature: '24℃~32℃' },
+          { name: '菲律宾', climate: '雨季', temperature: '25℃~33℃' }
+        ],
         holidays: [
           { name: '排灯节 (Diwali)', date: '10月/11月', importance: 'S' },
           { name: '水灯节', date: '11月', importance: 'A' },
@@ -2936,6 +3300,14 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '新加坡', climate: '雨季炎热', temperature: '24℃~32℃' },
+          { name: '马来西亚', climate: '雨季炎热', temperature: '24℃~32℃' },
+          { name: '泰国', climate: '凉季干燥', temperature: '25℃~34℃' },
+          { name: '越南', climate: '冬季凉爽', temperature: '15℃~25℃' },
+          { name: '印尼', climate: '雨季炎热', temperature: '24℃~32℃' },
+          { name: '菲律宾', climate: '旱季凉爽', temperature: '25℃~33℃' }
+        ],
         holidays: [
           { name: '圣诞节 (Christmas)', date: '12月25日', importance: 'S' },
           { name: '新年前夜', date: '12月31日', importance: 'S' },
@@ -2984,8 +3356,8 @@ export const regions: RegionData[] = [
   },
   {
     id: 'australia',
-    name: '澳洲',
-    flag: '\uD83C\uDDE6\uD83C\uDDFA',
+    name: '澳新',
+    flag: '🇦🇺🇳🇿',
     info: {
       currency: '澳元',
       currencyCode: 'AUD',
@@ -3000,6 +3372,10 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '澳大利亚', climate: '盛夏酷热', temperature: '25℃~40℃' },
+          { name: '新西兰', climate: '夏季温暖', temperature: '20℃~30℃' }
+        ],
         holidays: [
           { name: '新年 (New Year\'s Day)', date: '1月1日', importance: 'S' },
           { name: '澳洲国庆日 (Australia Day)', date: '1月26日', importance: 'S' },
@@ -3047,6 +3423,10 @@ export const regions: RegionData[] = [
         precipitation: '雨夹雪/小雨',
         wind: '多变 3-5级',
         daylight: '日照渐长 10-11h',
+        subRegions: [
+          { name: '澳大利亚', climate: '夏末炎热', temperature: '24℃~38℃' },
+          { name: '新西兰', climate: '夏末温和', temperature: '18℃~28℃' }
+        ],
         holidays: [
           { name: '情人节 (Valentine\'s Day)', date: '2月14日', importance: 'S' },
           { name: '中国新年', date: '1月/2月', importance: 'A' },
@@ -3094,6 +3474,10 @@ export const regions: RegionData[] = [
         precipitation: '春雨频繁',
         wind: '东南风 3-4级',
         daylight: '日照渐长 11-13h',
+        subRegions: [
+          { name: '澳大利亚', climate: '初秋温暖', temperature: '20℃~32℃' },
+          { name: '新西兰', climate: '初秋凉爽', temperature: '15℃~25℃' }
+        ],
         holidays: [
           { name: '劳动节 (Labour Day)', date: '3月第2个周一', importance: 'A' },
           { name: '和谐日', date: '3月21日', importance: 'B' },
@@ -3143,6 +3527,10 @@ export const regions: RegionData[] = [
         precipitation: '偶有小雨',
         wind: '微风 2-4级',
         daylight: '日照充足 12-14h',
+        subRegions: [
+          { name: '澳大利亚', climate: '秋季温和', temperature: '15℃~28℃' },
+          { name: '新西兰', climate: '秋季凉爽', temperature: '12℃~22℃' }
+        ],
         holidays: [
           { name: '复活节 (Easter)', date: '4月', importance: 'S' },
           { name: '澳新军团日 (ANZAC Day)', date: '4月25日', importance: 'S' },
@@ -3191,6 +3579,10 @@ export const regions: RegionData[] = [
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
+        subRegions: [
+          { name: '澳大利亚', climate: '秋末凉爽', temperature: '10℃~22℃' },
+          { name: '新西兰', climate: '深秋寒冷', temperature: '8℃~18℃' }
+        ],
         holidays: [
           { name: '母亲节 (Mother\'s Day)', date: '5月第2个周日', importance: 'S' },
         ],
@@ -3237,6 +3629,10 @@ export const regions: RegionData[] = [
         precipitation: '雷阵雨/暴雨',
         wind: '南风 3-5级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '澳大利亚', climate: '初冬寒冷', temperature: '5℃~18℃' },
+          { name: '新西兰', climate: '初冬寒冷', temperature: '4℃~14℃' }
+        ],
         holidays: [
           { name: '女王诞辰日', date: '6月第2个周一', importance: 'A' },
           { name: '父亲节 (Father\'s Day)', date: '9月(邻近)', importance: 'B' },
@@ -3285,6 +3681,10 @@ export const regions: RegionData[] = [
         precipitation: '对流雨频发',
         wind: '闷热少风 1-3级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '澳大利亚', climate: '隆冬寒冷', temperature: '3℃~15℃' },
+          { name: '新西兰', climate: '冬季寒冷', temperature: '2℃~12℃' }
+        ],
         holidays: [
           { name: 'NAIDOC周', date: '7月第1周', importance: 'A' },
           { name: '圣诞 in July', date: '7月', importance: 'B' },
@@ -3332,6 +3732,10 @@ export const regions: RegionData[] = [
         precipitation: '台风/暴雨',
         wind: '多变 5-8级',
         daylight: '日照渐短 13-14h',
+        subRegions: [
+          { name: '澳大利亚', climate: '冬末转暖', temperature: '5℃~18℃' },
+          { name: '新西兰', climate: '冬末转暖', temperature: '4℃~14℃' }
+        ],
         holidays: [
           { name: '皇家展览日(墨尔本)', date: '8月中旬', importance: 'B' },
           { name: '国家科学周', date: '8月', importance: 'B' },
@@ -3379,6 +3783,10 @@ export const regions: RegionData[] = [
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
+        subRegions: [
+          { name: '澳大利亚', climate: '早春', temperature: '8℃~22℃' },
+          { name: '新西兰', climate: '早春', temperature: '8℃~18℃' }
+        ],
         holidays: [
           { name: '父亲节 (Father\'s Day)', date: '9月第1个周日', importance: 'S' },
           { name: ' AFL Grand Final', date: '9月末', importance: 'S' },
@@ -3427,6 +3835,10 @@ export const regions: RegionData[] = [
         precipitation: '秋雨绵绵',
         wind: '北风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '澳大利亚', climate: '春季温和', temperature: '12℃~26℃' },
+          { name: '新西兰', climate: '春季凉爽', temperature: '12℃~22℃' }
+        ],
         holidays: [
           { name: '劳动节 (Labour Day)', date: '10月第1个周一', importance: 'A' },
           { name: '墨尔本杯预热', date: '11月第1个周二(邻近)', importance: 'B' },
@@ -3474,6 +3886,10 @@ export const regions: RegionData[] = [
         precipitation: '初雪/雨夹雪',
         wind: '寒风 4-6级',
         daylight: '日照最短 9-10h',
+        subRegions: [
+          { name: '澳大利亚', climate: '春末温暖', temperature: '18℃~32℃' },
+          { name: '新西兰', climate: '春末温和', temperature: '15℃~25℃' }
+        ],
         holidays: [
           { name: '墨尔本杯 (Melbourne Cup)', date: '11月第1个周二', importance: 'S' },
           { name: '黑色星期五', date: '11月第4个周五', importance: 'S' },
@@ -3524,6 +3940,10 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '澳大利亚', climate: '初夏渐热', temperature: '22℃~38℃' },
+          { name: '新西兰', climate: '初夏凉爽', temperature: '18℃~28℃' }
+        ],
         holidays: [
           { name: '圣诞节 (Christmas)', date: '12月25日', importance: 'S' },
           { name: '节礼日 (Boxing Day)', date: '12月26日', importance: 'S' },
@@ -3589,6 +4009,11 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '本州', climate: '冬季寒冷', temperature: '0℃~10℃' },
+          { name: '北海道', climate: '严寒', temperature: '-10℃~0℃' },
+          { name: '九州', climate: '冬季温和', temperature: '5℃~15℃' }
+        ],
         holidays: [
           { name: '正月/新年 (Oshogatsu)', date: '1月1-3日', importance: 'S' },
           { name: '成人之日', date: '1月第2个周一', importance: 'A' },
@@ -3639,6 +4064,11 @@ export const regions: RegionData[] = [
         precipitation: '雨夹雪/小雨',
         wind: '多变 3-5级',
         daylight: '日照渐长 10-11h',
+        subRegions: [
+          { name: '本州', climate: '冬末转暖', temperature: '2℃~12℃' },
+          { name: '北海道', climate: '严寒', temperature: '-8℃~2℃' },
+          { name: '九州', climate: '早春温暖', temperature: '7℃~17℃' }
+        ],
         holidays: [
           { name: '节分 (Setsubun)', date: '2月3日', importance: 'A' },
           { name: '情人节 (Valentine\'s Day)', date: '2月14日', importance: 'S' },
@@ -3687,6 +4117,11 @@ export const regions: RegionData[] = [
         precipitation: '春雨频繁',
         wind: '东南风 3-4级',
         daylight: '日照渐长 11-13h',
+        subRegions: [
+          { name: '本州', climate: '早春', temperature: '6℃~16℃' },
+          { name: '北海道', climate: '冬末转暖', temperature: '-4℃~6℃' },
+          { name: '九州', climate: '春季温和', temperature: '10℃~20℃' }
+        ],
         holidays: [
           { name: '女儿节/雏祭 (Hinamatsuri)', date: '3月3日', importance: 'A' },
           { name: '春分之日', date: '3月20日左右', importance: 'A' },
@@ -3735,6 +4170,11 @@ export const regions: RegionData[] = [
         precipitation: '偶有小雨',
         wind: '微风 2-4级',
         daylight: '日照充足 12-14h',
+        subRegions: [
+          { name: '本州', climate: '春季温和', temperature: '10℃~20℃' },
+          { name: '北海道', climate: '春季凉爽', temperature: '2℃~12℃' },
+          { name: '九州', climate: '温暖多雨', temperature: '14℃~24℃' }
+        ],
         holidays: [
           { name: '昭和之日', date: '4月29日', importance: 'B' },
           { name: '黄金周预热', date: '4月末', importance: 'A' },
@@ -3783,6 +4223,11 @@ export const regions: RegionData[] = [
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
+        subRegions: [
+          { name: '本州', climate: '温暖', temperature: '15℃~25℃' },
+          { name: '北海道', climate: '温和', temperature: '8℃~18℃' },
+          { name: '九州', climate: '初夏', temperature: '18℃~28℃' }
+        ],
         holidays: [
           { name: '黄金周 (Golden Week)', date: '4月末-5月初', importance: 'S' },
           { name: '宪法纪念日', date: '5月3日', importance: 'A' },
@@ -3831,6 +4276,11 @@ export const regions: RegionData[] = [
         precipitation: '雷阵雨/暴雨',
         wind: '南风 3-5级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '本州', climate: '梅雨潮湿', temperature: '20℃~28℃' },
+          { name: '北海道', climate: '初夏', temperature: '13℃~22℃' },
+          { name: '九州', climate: '梅雨潮湿', temperature: '22℃~30℃' }
+        ],
         holidays: [
           { name: '父亲节', date: '6月第3个周日', importance: 'S' },
           { name: '紫阳花观赏季', date: '6月全月', importance: 'B' },
@@ -3878,6 +4328,11 @@ export const regions: RegionData[] = [
         precipitation: '对流雨频发',
         wind: '闷热少风 1-3级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '本州', climate: '盛夏炎热', temperature: '25℃~35℃' },
+          { name: '北海道', climate: '夏季温暖', temperature: '18℃~25℃' },
+          { name: '九州', climate: '夏季炎热', temperature: '26℃~35℃' }
+        ],
         holidays: [
           { name: '七夕 (Tanabata)', date: '7月7日', importance: 'A' },
           { name: '海之日', date: '7月第3个周一', importance: 'A' },
@@ -3928,6 +4383,11 @@ export const regions: RegionData[] = [
         precipitation: '台风/暴雨',
         wind: '多变 5-8级',
         daylight: '日照渐短 13-14h',
+        subRegions: [
+          { name: '本州', climate: '夏末炎热', temperature: '26℃~35℃' },
+          { name: '北海道', climate: '夏末凉爽', temperature: '16℃~23℃' },
+          { name: '九州', climate: '夏末炎热', temperature: '26℃~35℃' }
+        ],
         holidays: [
           { name: '盂兰盆节 (Obon)', date: '8月13-16日', importance: 'S' },
           { name: '山之日', date: '8月11日', importance: 'B' },
@@ -3976,6 +4436,11 @@ export const regions: RegionData[] = [
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
+        subRegions: [
+          { name: '本州', climate: '初秋凉爽', temperature: '22℃~30℃' },
+          { name: '北海道', climate: '初秋凉爽', temperature: '12℃~20℃' },
+          { name: '九州', climate: '初秋炎热', temperature: '23℃~32℃' }
+        ],
         holidays: [
           { name: '敬老之日', date: '9月第3个周一', importance: 'A' },
           { name: '秋分之日', date: '9月23日左右', importance: 'A' },
@@ -4024,6 +4489,11 @@ export const regions: RegionData[] = [
         precipitation: '秋雨绵绵',
         wind: '北风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '本州', climate: '秋季凉爽', temperature: '15℃~24℃' },
+          { name: '北海道', climate: '深秋寒冷', temperature: '6℃~15℃' },
+          { name: '九州', climate: '秋季温暖', temperature: '18℃~27℃' }
+        ],
         holidays: [
           { name: '体育之日', date: '10月第2个周一', importance: 'A' },
           { name: '万圣节 (Halloween)', date: '10月31日', importance: 'S' },
@@ -4071,6 +4541,11 @@ export const regions: RegionData[] = [
         precipitation: '初雪/雨夹雪',
         wind: '寒风 4-6级',
         daylight: '日照最短 9-10h',
+        subRegions: [
+          { name: '本州', climate: '深秋寒冷', temperature: '8℃~17℃' },
+          { name: '北海道', climate: '初冬严寒', temperature: '0℃~8℃' },
+          { name: '九州', climate: '初冬凉爽', temperature: '12℃~22℃' }
+        ],
         holidays: [
           { name: '七五三 (Shichi-Go-San)', date: '11月15日', importance: 'A' },
           { name: '劳动节(勤劳感谢日)', date: '11月23日', importance: 'A' },
@@ -4121,6 +4596,11 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '本州', climate: '冬季寒冷', temperature: '2℃~12℃' },
+          { name: '北海道', climate: '严寒', temperature: '-6℃~2℃' },
+          { name: '九州', climate: '冬季温和', temperature: '7℃~17℃' }
+        ],
         holidays: [
           { name: '圣诞节 (Christmas)', date: '12月25日', importance: 'S' },
           { name: '大晦日/除夕', date: '12月31日', importance: 'S' },
@@ -4185,6 +4665,10 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '首尔', climate: '冬季寒冷', temperature: '-8℃~2℃' },
+          { name: '釜山', climate: '冬季温和', temperature: '0℃~10℃' }
+        ],
         holidays: [
           { name: '新年 (New Year)', date: '1月1日', importance: 'A' },
           { name: '春节 (Seollal)', date: '1月/2月', importance: 'S' },
@@ -4234,6 +4718,10 @@ export const regions: RegionData[] = [
         precipitation: '雨夹雪/小雨',
         wind: '多变 3-5级',
         daylight: '日照渐长 10-11h',
+        subRegions: [
+          { name: '首尔', climate: '冬末转暖', temperature: '-5℃~5℃' },
+          { name: '釜山', climate: '早春温暖', temperature: '2℃~12℃' }
+        ],
         holidays: [
           { name: '春节 (Seollal)', date: '1月/2月', importance: 'S' },
           { name: '元宵节 (Daeboreum)', date: '正月十五', importance: 'B' },
@@ -4282,6 +4770,10 @@ export const regions: RegionData[] = [
         precipitation: '春雨频繁',
         wind: '东南风 3-4级',
         daylight: '日照渐长 11-13h',
+        subRegions: [
+          { name: '首尔', climate: '早春凉爽', temperature: '0℃~10℃' },
+          { name: '釜山', climate: '春季温和', temperature: '6℃~16℃' }
+        ],
         holidays: [
           { name: '三一节 (独立运动纪念日)', date: '3月1日', importance: 'A' },
           { name: '白色情人节', date: '3月14日', importance: 'S' },
@@ -4329,6 +4821,10 @@ export const regions: RegionData[] = [
         precipitation: '偶有小雨',
         wind: '微风 2-4级',
         daylight: '日照充足 12-14h',
+        subRegions: [
+          { name: '首尔', climate: '春季温和', temperature: '7℃~18℃' },
+          { name: '釜山', climate: '温暖多雨', temperature: '10℃~20℃' }
+        ],
         holidays: [
           { name: '国会议员选举(如年份)', date: '4月', importance: 'B' },
           { name: '佛诞节', date: '农历四月初八', importance: 'A' },
@@ -4377,6 +4873,10 @@ export const regions: RegionData[] = [
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
+        subRegions: [
+          { name: '首尔', climate: '温暖', temperature: '13℃~24℃' },
+          { name: '釜山', climate: '初夏', temperature: '14℃~24℃' }
+        ],
         holidays: [
           { name: '儿童节', date: '5月5日', importance: 'A' },
           { name: '父母节', date: '5月8日', importance: 'S' },
@@ -4426,6 +4926,10 @@ export const regions: RegionData[] = [
         precipitation: '雷阵雨/暴雨',
         wind: '南风 3-5级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '首尔', climate: '初夏', temperature: '18℃~28℃' },
+          { name: '釜山', climate: '夏季炎热', temperature: '18℃~28℃' }
+        ],
         holidays: [
           { name: '显忠日', date: '6月6日', importance: 'A' },
           { name: '端午节', date: '农历五月初五', importance: 'A' },
@@ -4473,6 +4977,10 @@ export const regions: RegionData[] = [
         precipitation: '对流雨频发',
         wind: '闷热少风 1-3级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '首尔', climate: '夏季炎热', temperature: '22℃~32℃' },
+          { name: '釜山', climate: '盛夏炎热', temperature: '22℃~32℃' }
+        ],
         holidays: [
           { name: '制宪节', date: '7月17日', importance: 'B' },
           { name: '暑假开始', date: '7月', importance: 'A' },
@@ -4520,6 +5028,10 @@ export const regions: RegionData[] = [
         precipitation: '台风/暴雨',
         wind: '多变 5-8级',
         daylight: '日照渐短 13-14h',
+        subRegions: [
+          { name: '首尔', climate: '盛夏炎热', temperature: '24℃~34℃' },
+          { name: '釜山', climate: '夏末炎热', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '光复节', date: '8月15日', importance: 'A' },
           { name: '父母节(邻近)', date: '5月', importance: 'B' },
@@ -4567,6 +5079,10 @@ export const regions: RegionData[] = [
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
+        subRegions: [
+          { name: '首尔', climate: '初秋凉爽', temperature: '18℃~28℃' },
+          { name: '釜山', climate: '初秋温暖', temperature: '20℃~30℃' }
+        ],
         holidays: [
           { name: '中秋节 (Chuseok)', date: '农历八月十五', importance: 'S' },
           { name: '教师节', date: '5月15日(已)', importance: 'B' },
@@ -4616,6 +5132,10 @@ export const regions: RegionData[] = [
         precipitation: '秋雨绵绵',
         wind: '北风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '首尔', climate: '秋季凉爽', temperature: '11℃~22℃' },
+          { name: '釜山', climate: '秋季温和', temperature: '15℃~24℃' }
+        ],
         holidays: [
           { name: '开天节', date: '10月3日', importance: 'A' },
           { name: '韩文日', date: '10月9日', importance: 'A' },
@@ -4664,6 +5184,10 @@ export const regions: RegionData[] = [
         precipitation: '初雪/雨夹雪',
         wind: '寒风 4-6级',
         daylight: '日照最短 9-10h',
+        subRegions: [
+          { name: '首尔', climate: '深秋寒冷', temperature: '3℃~12℃' },
+          { name: '釜山', climate: '初冬凉爽', temperature: '8℃~18℃' }
+        ],
         holidays: [
           { name: ' pepero Day', date: '11月11日', importance: 'S' },
           { name: '教师节', date: '不一致', importance: 'B' },
@@ -4713,6 +5237,10 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '首尔', climate: '冬季寒冷', temperature: '-6℃~2℃' },
+          { name: '釜山', climate: '冬季温和', temperature: '2℃~12℃' }
+        ],
         holidays: [
           { name: '圣诞节 (Christmas)', date: '12月25日', importance: 'S' },
           { name: '新年前夜', date: '12月31日', importance: 'S' },
@@ -4776,6 +5304,13 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '墨西哥', climate: '冬季温和', temperature: '12℃~24℃' },
+          { name: '巴西', climate: '盛夏炎热', temperature: '25℃~38℃' },
+          { name: '阿根廷', climate: '盛夏炎热', temperature: '22℃~35℃' },
+          { name: '智利', climate: '盛夏炎热', temperature: '22℃~35℃' },
+          { name: '哥伦比亚', climate: '干季温暖', temperature: '22℃~32℃' }
+        ],
         holidays: [
           { name: '新年 (Año Nuevo)', date: '1月1日', importance: 'S' },
           { name: '三王节 (Día de Reyes)', date: '1月6日', importance: 'A' },
@@ -4825,6 +5360,13 @@ export const regions: RegionData[] = [
         precipitation: '雨夹雪/小雨',
         wind: '多变 3-5级',
         daylight: '日照渐长 10-11h',
+        subRegions: [
+          { name: '墨西哥', climate: '早春温暖', temperature: '14℃~28℃' },
+          { name: '巴西', climate: '夏末炎热', temperature: '25℃~40℃' },
+          { name: '阿根廷', climate: '夏末炎热', temperature: '24℃~38℃' },
+          { name: '智利', climate: '夏末炎热', temperature: '24℃~38℃' },
+          { name: '哥伦比亚', climate: '干季温暖', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '狂欢节 (Carnaval)', date: '2月/3月', importance: 'S' },
           { name: '情人节 (Día de San Valentín)', date: '2月14日', importance: 'S' },
@@ -4872,6 +5414,13 @@ export const regions: RegionData[] = [
         precipitation: '春雨频繁',
         wind: '东南风 3-4级',
         daylight: '日照渐长 11-13h',
+        subRegions: [
+          { name: '墨西哥', climate: '春季温暖', temperature: '16℃~30℃' },
+          { name: '巴西', climate: '夏末转秋', temperature: '24℃~38℃' },
+          { name: '阿根廷', climate: '夏末转秋', temperature: '22℃~35℃' },
+          { name: '智利', climate: '夏末转秋', temperature: '22℃~35℃' },
+          { name: '哥伦比亚', climate: '干季', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '圣周 (Semana Santa)', date: '3月/4月', importance: 'S' },
           { name: '父亲节(部分国家)', date: '3月19日', importance: 'B' },
@@ -4921,6 +5470,13 @@ export const regions: RegionData[] = [
         precipitation: '偶有小雨',
         wind: '微风 2-4级',
         daylight: '日照充足 12-14h',
+        subRegions: [
+          { name: '墨西哥', climate: '初夏渐热', temperature: '18℃~32℃' },
+          { name: '巴西', climate: '秋季温和', temperature: '22℃~35℃' },
+          { name: '阿根廷', climate: '秋季凉爽', temperature: '18℃~30℃' },
+          { name: '智利', climate: '秋季凉爽', temperature: '18℃~30℃' },
+          { name: '哥伦比亚', climate: '雨季开始', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '复活节 (Pascua)', date: '4月', importance: 'S' },
           { name: '愚人节 (Día de los Inocentes)', date: '12月28日(邻近)', importance: 'B' },
@@ -4968,6 +5524,13 @@ export const regions: RegionData[] = [
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
+        subRegions: [
+          { name: '墨西哥', climate: '雨季开始', temperature: '20℃~34℃' },
+          { name: '巴西', climate: '秋末凉爽', temperature: '20℃~32℃' },
+          { name: '阿根廷', climate: '深秋寒冷', temperature: '15℃~25℃' },
+          { name: '智利', climate: '深秋寒冷', temperature: '15℃~25℃' },
+          { name: '哥伦比亚', climate: '雨季多雨', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '劳动节 (Día del Trabajo)', date: '5月1日', importance: 'A' },
           { name: '母亲节 (Día de la Madre)', date: '5月10日(部分)', importance: 'S' },
@@ -5016,6 +5579,13 @@ export const regions: RegionData[] = [
         precipitation: '雷阵雨/暴雨',
         wind: '南风 3-5级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '墨西哥', climate: '雨季多雨', temperature: '22℃~36℃' },
+          { name: '巴西', climate: '初冬凉爽', temperature: '18℃~30℃' },
+          { name: '阿根廷', climate: '初冬寒冷', temperature: '12℃~22℃' },
+          { name: '智利', climate: '初冬寒冷', temperature: '12℃~22℃' },
+          { name: '哥伦比亚', climate: '雨季多雨', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '父亲节 (Día del Padre)', date: '6月第3个周日', importance: 'S' },
           { name: 'Corpus Christi', date: '6月', importance: 'B' },
@@ -5064,6 +5634,13 @@ export const regions: RegionData[] = [
         precipitation: '对流雨频发',
         wind: '闷热少风 1-3级',
         daylight: '日照最长 14-15h',
+        subRegions: [
+          { name: '墨西哥', climate: '夏季炎热', temperature: '24℃~38℃' },
+          { name: '巴西', climate: '冬季凉爽', temperature: '16℃~28℃' },
+          { name: '阿根廷', climate: '冬季寒冷', temperature: '10℃~20℃' },
+          { name: '智利', climate: '冬季寒冷', temperature: '10℃~20℃' },
+          { name: '哥伦比亚', climate: '雨季', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '独立日(多国)', date: '7月', importance: 'A' },
           { name: 'FIFA世界杯(如年)', date: '7月', importance: 'S' },
@@ -5111,6 +5688,13 @@ export const regions: RegionData[] = [
         precipitation: '台风/暴雨',
         wind: '多变 5-8级',
         daylight: '日照渐短 13-14h',
+        subRegions: [
+          { name: '墨西哥', climate: '雨季', temperature: '24℃~38℃' },
+          { name: '巴西', climate: '冬末转暖', temperature: '18℃~30℃' },
+          { name: '阿根廷', climate: '冬末转暖', temperature: '12℃~22℃' },
+          { name: '智利', climate: '冬末转暖', temperature: '12℃~22℃' },
+          { name: '哥伦比亚', climate: '雨季', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '独立日(多国延续)', date: '8月', importance: 'A' },
         ],
@@ -5157,6 +5741,13 @@ export const regions: RegionData[] = [
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
+        subRegions: [
+          { name: '墨西哥', climate: '雨季', temperature: '22℃~36℃' },
+          { name: '巴西', climate: '早春', temperature: '20℃~32℃' },
+          { name: '阿根廷', climate: '早春', temperature: '15℃~25℃' },
+          { name: '智利', climate: '早春', temperature: '15℃~25℃' },
+          { name: '哥伦比亚', climate: '雨季', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '独立日(多国)', date: '9月', importance: 'S' },
           { name: '智利国庆(Fiestas Patrias)', date: '9月18-19日', importance: 'S' },
@@ -5204,6 +5795,13 @@ export const regions: RegionData[] = [
         precipitation: '秋雨绵绵',
         wind: '北风 4-5级',
         daylight: '日照较短 10-11h',
+        subRegions: [
+          { name: '墨西哥', climate: '秋末转干', temperature: '18℃~30℃' },
+          { name: '巴西', climate: '春季温暖', temperature: '22℃~35℃' },
+          { name: '阿根廷', climate: '春季凉爽', temperature: '18℃~30℃' },
+          { name: '智利', climate: '春季凉爽', temperature: '18℃~30℃' },
+          { name: '哥伦比亚', climate: '雨季', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '亡灵节预热(Día de Muertos)', date: '11月1-2日(邻近)', importance: 'A' },
           { name: '哥伦布日', date: '10月12日', importance: 'B' },
@@ -5251,6 +5849,13 @@ export const regions: RegionData[] = [
         precipitation: '初雪/雨夹雪',
         wind: '寒风 4-6级',
         daylight: '日照最短 9-10h',
+        subRegions: [
+          { name: '墨西哥', climate: '初冬温和', temperature: '16℃~28℃' },
+          { name: '巴西', climate: '春末温暖', temperature: '24℃~38℃' },
+          { name: '阿根廷', climate: '春末温和', temperature: '20℃~32℃' },
+          { name: '智利', climate: '春末温和', temperature: '20℃~32℃' },
+          { name: '哥伦比亚', climate: '干季转雨', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '亡灵节 (Día de Muertos)', date: '11月1-2日', importance: 'S' },
           { name: '黑色星期五', date: '11月第4个周五', importance: 'S' },
@@ -5301,6 +5906,13 @@ export const regions: RegionData[] = [
         precipitation: '少量降雪',
         wind: '北风 4-6级',
         daylight: '日照短 9-10h',
+        subRegions: [
+          { name: '墨西哥', climate: '冬季温和', temperature: '14℃~26℃' },
+          { name: '巴西', climate: '初夏渐热', temperature: '25℃~40℃' },
+          { name: '阿根廷', climate: '初夏凉爽', temperature: '22℃~35℃' },
+          { name: '智利', climate: '初夏凉爽', temperature: '22℃~35℃' },
+          { name: '哥伦比亚', climate: '干季温暖', temperature: '24℃~34℃' }
+        ],
         holidays: [
           { name: '圣诞节 (Navidad)', date: '12月25日', importance: 'S' },
           { name: '新年前夜 (Año Nuevo)', date: '12月31日', importance: 'S' },

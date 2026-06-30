@@ -117,6 +117,17 @@ export default function MonthSection({ item, regionName, theme }: MonthSectionPr
             <div className="flex items-center gap-2">{getIcon(data.climateIcon)}<span className="font-medium text-sm" style={{ color: 'var(--text-primary)' }}>{data.climate}</span></div>
             <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--text-tertiary)' }}><Thermometer className="w-3.5 h-3.5" /><span>{data.temperature}</span></div>
             <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--text-secondary)' }}><CloudRain className="w-3.5 h-3.5" /><span>{data.weatherDetail}</span></div>
+            {data.subRegions && data.subRegions.length > 0 && (
+              <div className="space-y-1.5 pt-2 border-t" style={{ borderColor: 'var(--glass-border)' }}>
+                {data.subRegions.map((sub, idx) => (
+                  <div key={idx} className="flex items-center justify-between text-[10px] gap-2">
+                    <span className="shrink-0 px-1.5 py-0.5 rounded border font-medium" style={{ background: 'var(--tag-bg)', color: 'var(--tag-text)', borderColor: 'var(--tag-border)' }}>{sub.name}</span>
+                    <span className="text-right truncate" style={{ color: 'var(--text-secondary)' }}>{sub.climate}</span>
+                    <span className="tabular-nums shrink-0" style={{ color: 'var(--text-tertiary)' }}>{sub.temperature}</span>
+                  </div>
+                ))}
+              </div>
+            )}
             <div className="grid grid-cols-2 gap-x-2 gap-y-1 mt-1 pt-2 border-t text-[10px]" style={{ borderColor: 'var(--glass-border)', color: 'var(--text-tertiary)' }}>
               <div className="flex items-center gap-1"><Droplets className="w-3 h-3" />{data.humidity}</div>
               <div className="flex items-center gap-1"><CloudRain className="w-3 h-3" />{data.precipitation}</div>
