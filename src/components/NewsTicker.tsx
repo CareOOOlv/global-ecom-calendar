@@ -42,15 +42,15 @@ export default function NewsTicker() {
   async function fetchNews() {
     setLoading(true);
     try {
-      // 先试本地（开发环境），再试生产环境
+      // 生产环境：直接读 main 分支的最新 news.json（GitHub Action 更新后无需重建即可生效）
       const urls = [
-        '/news.json',
-        'https://careooolv.github.io/global-ecom-calendar/news.json',
+        '/news.json', // 本地开发
+        'https://raw.githubusercontent.com/CareOOOlv/global-ecom-calendar/main/public/news.json',
       ];
       let data: NewsData | null = null;
       for (const url of urls) {
         try {
-          const res = await fetch(url, { cache: 'no-store' });
+          const res = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' });
           if (res.ok) { data = await res.json(); break; }
         } catch { /* ignore */ }
       }
