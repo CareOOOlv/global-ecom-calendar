@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { format } from 'date-fns';
 import { zhCN } from 'date-fns/locale';
 import {
@@ -8,7 +9,9 @@ import DataCard from '@/components/DataCard';
 import { ScrollArea } from '@/components/ScrollArea';
 import { getIcon, getImportanceColor } from '@/lib/icons';
 import { getCountdown, type CountdownResult } from '@/lib/countdown';
-import type { MonthlyData } from '@/types';
+import { fetchWeatherForCity, type CityWeather } from '@/lib/weather';
+import { WEATHER_CITIES } from '@/data/weatherCities';
+import type { MonthlyData, RegionId } from '@/types';
 
 interface LoadedMonth {
   date: Date;
@@ -19,6 +22,7 @@ interface LoadedMonth {
 interface MonthSectionProps {
   item: LoadedMonth;
   regionName: string;
+  regionId: RegionId;
   theme: string;
 }
 
@@ -46,8 +50,25 @@ function CountdownBadge({ cd }: { cd: CountdownResult }) {
   );
 }
 
-export default function MonthSection({ item, regionName, theme }: MonthSectionProps) {
+export default function MonthSection({ item, regionName, regionId, theme }: MonthSectionProps) {
   const { data, date, isStartMonth } = item;
+  const [weatherMap, setWeatherMap] = useState<Record<string, CityWeather>>({});
+
+  // Fetch real-time weather for this region's cities
+  useEffect(() => {
+    const cities = WEATHER_CITIES[regionId];
+    if (!cities || cities.length === 0) return;
+    let cancelled = false;
+    (async () => {
+      const results = await Promise.all(cities.map(fetchWeatherForCity));
+      if (cancelled) return;
+      const map: Record<string, CityWeather> = {};
+      for (const r of results) map[r.city.locationId] = r;
+      setWeatherMap(map);
+    })();
+    return () => { cancelled = true; };
+  }, [regionId]);
+
   if (!data) return null;
 
   const now = new Date();
@@ -119,18 +140,40 @@ export default function MonthSection({ item, regionName, theme }: MonthSectionPr
             <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--text-secondary)' }}><CloudRain className="w-3.5 h-3.5" /><span>{data.weatherDetail}</span></div>
             {data.subRegions && data.subRegions.length > 0 && (
               <div className="space-y-1.5 pt-2 border-t" style={{ borderColor: 'var(--glass-border)' }}>
-                {data.subRegions.map((sub, idx) => (
-                  <div key={idx} className="flex items-center justify-between text-[10px] gap-2">
-                    <span className="shrink-0 px-1.5 py-0.5 rounded border font-medium" style={{ background: 'var(--tag-bg)', color: 'var(--tag-text)', borderColor: 'var(--tag-border)' }}>{sub.name}</span>
-                    <span className="text-right truncate" style={{ color: 'var(--text-secondary)' }}>{sub.climate}</span>
-                    <span className="tabular-nums shrink-0" style={{ color: 'var(--text-tertiary)' }}>{sub.temperature}</span>
-                  </div>
-                ))}
+                {data.subRegions.map((sub, idx) => {
+                  // Look up matching weather city by sub-region name
+                  const cities = WEATHER_CITIES[regionId] || [];
+                  const wCity = cities.find(c => sub.name.includes(c.region) || c.region.includes(sub.name));
+                  const wData = wCity ? weatherMap[wCity.locationId] : undefined;
+                  const w = wData?.weather;
+                  return (
+                    <div key={idx} className="flex items-center gap-1.5 text-[10px]">
+                      <span className="shrink-0 px-1.5 py-0.5 rounded border font-medium"
+                        style={{ background: 'var(--tag-bg)', color: 'var(--tag-text)', borderColor: 'var(--tag-border)' }}>
+                        {sub.name}
+                      </span>
+                      {/* Real-time weather badge */}
+                      {w ? (
+                        <span className="inline-flex items-center gap-0.5 shrink-0 px-1 py-0 rounded-[3px] text-[10px] font-medium"
+                          style={{ background: 'rgba(59,130,246,0.1)', color: 'var(--accent-blue)', border: '1px solid rgba(59,130,246,0.2)' }}>
+                          <span className="text-[11px]">{w.icon}</span>
+                          <span>{w.temp}°</span>
+                        </span>
+                      ) : wData?.error ? (
+                        <span className="shrink-0 text-[9px] opacity-50" style={{ color: 'var(--text-tertiary)' }}>⏳</span>
+                      ) : (
+                        <span className="shrink-0 text-[9px] opacity-50" style={{ color: 'var(--text-tertiary)' }}>⏳</span>
+                      )}
+                      <span className="flex-1 text-right truncate" style={{ color: 'var(--text-secondary)' }}>{sub.climate}</span>
+                      <span className="tabular-nums shrink-0" style={{ color: 'var(--text-tertiary)' }}>{sub.temperature}</span>
+                    </div>
+                  );
+                })}
               </div>
             )}
             <div className="flex items-start gap-1 pt-1 text-[9px]" style={{ color: 'var(--text-tertiary)' }}>
               <Info className="w-3 h-3 shrink-0 mt-0.5" />
-              <span>气候参考为季节性趋势，非实时天气预报</span>
+              <span>气候参考为季节性趋势 · {weatherMap && Object.keys(weatherMap).length > 0 ? '蓝标为实时天气' : '加载实时天气中...'}</span>
             </div>
             <div className="grid grid-cols-2 gap-x-2 gap-y-1 mt-1 pt-2 border-t text-[10px]" style={{ borderColor: 'var(--glass-border)', color: 'var(--text-tertiary)' }}>
               <div className="flex items-center gap-1"><Droplets className="w-3 h-3" />{data.humidity}</div>

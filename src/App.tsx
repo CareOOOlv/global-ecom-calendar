@@ -103,6 +103,7 @@ export default function App() {
                 key={`${selectedRegion}-${format(item.date, 'yyyy-MM')}`}
                 item={item}
                 regionName={currentRegion?.name || ''}
+                regionId={selectedRegion}
                 theme={theme}
               />
             ))}
