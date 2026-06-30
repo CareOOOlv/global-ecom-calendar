@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 18% 8%;
+    --foreground: 220 20% 92%;
+    --card: 220 16% 11%;
+    --card-foreground: 220 20% 92%;
+    --border: 220 15% 22%;
+    --input: 220 15% 22%;
+    --radius: 0.5rem;
+
+    --bg-base: #0f1117;
+    --bg-elevated: #1a1d27;
+    --text-primary: #e8eaf0;
+    --text-secondary: rgba(200, 210, 230, 0.65);
+    --text-tertiary: rgba(160, 170, 195, 0.45);
+    --glass-bg: rgba(255, 255, 255, 0.04);
+    --glass-bg-hover: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.09);
+    --glass-border-hover: rgba(255, 255, 255, 0.22);
+    --accent-red: #f05656;
+    --accent-green: #4ade80;
+    --accent-purple: #b8a0f0;
+    --tag-bg: rgba(167, 139, 250, 0.15);
+    --tag-text: #A78BFA;
+    --tag-border: rgba(167, 139, 250, 0.25);
+    --scrollbar-thumb: rgba(255, 255, 255, 0.15);
+  }
+
+  [data-theme="light"] {
+    --background: 0 0% 96%;
+    --foreground: 220 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+    --border: 220 13% 85%;
+    --input: 220 13% 85%;
+    --radius: 0.5rem;
+
+    --bg-base: #f0f2f5;
+    --bg-elevated: #ffffff;
+    --text-primary: #1a1a2e;
+    --text-secondary: rgba(26, 26, 46, 0.65);
+    --text-tertiary: rgba(26, 26, 46, 0.4);
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-bg-hover: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(0, 0, 0, 0.06);
+    --glass-border-hover: rgba(0, 0, 0, 0.12);
+    --accent-red: #DC2626;
+    --accent-green: #16a34a;
+    --accent-purple: #7C3AED;
+    --tag-bg: rgba(124, 58, 237, 0.1);
+    --tag-text: #7C3AED;
+    --tag-border: rgba(124, 58, 237, 0.2);
+    --scrollbar-thumb: rgba(0, 0, 0, 0.15);
+  }
+}
+
+@layer base {
+  * { border-color: var(--glass-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg-base);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Noto Sans SC', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  }
+  .glass-card:hover {
+    border-color: var(--glass-border-hover);
+    background: var(--glass-bg-hover);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  }
+  .glass-pill {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+  }
+  .glass-pill:hover {
+    border-color: var(--accent-red);
+    background: var(--glass-bg-hover);
+  }
+  .region-tab {
+    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer whitespace-nowrap select-none;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+  }
+  .region-tab:hover {
+    background: var(--glass-bg-hover);
+    color: var(--text-primary);
+    border-color: var(--glass-border-hover);
+  }
+  .region-tab.active {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: var(--accent-red);
+    color: var(--accent-red);
+  }
+  [data-theme="light"] .region-tab.active {
+    background: rgba(220, 38, 38, 0.1);
+    border-color: var(--accent-red);
+    color: var(--accent-red);
+  }
+  .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-purple);
+  }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+}
