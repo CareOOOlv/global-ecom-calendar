@@ -7,6 +7,7 @@ import Header from '@/components/Header';
 import RegionSelector from '@/components/RegionSelector';
 import ExchangeRateBar from '@/components/ExchangeRateBar';
 import MonthSection from '@/components/MonthSection';
+import NewsTicker from '@/components/NewsTicker';
 
 interface LoadedMonth {
   date: Date;
@@ -86,6 +87,11 @@ export default function App() {
             </div>
           </div>
         )}
+
+        {/* 跨境资讯滚动条 */}
+        <div className="px-3 md:px-6 max-w-6xl mx-auto w-full mb-3">
+          <NewsTicker />
+        </div>
 
         <div className="flex-1 px-6">
           <div className="max-w-7xl mx-auto">
