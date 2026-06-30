@@ -26,6 +26,7 @@
     --accent-red: #f05656;
     --accent-green: #4ade80;
     --accent-purple: #b8a0f0;
+    --accent-blue: #60a5fa;
     --tag-bg: rgba(167, 139, 250, 0.15);
     --tag-text: #A78BFA;
     --tag-border: rgba(167, 139, 250, 0.25);
@@ -53,6 +54,7 @@
     --accent-red: #DC2626;
     --accent-green: #16a34a;
     --accent-purple: #7C3AED;
+    --accent-blue: #2563eb;
     --tag-bg: rgba(124, 58, 237, 0.1);
     --tag-text: #7C3AED;
     --tag-border: rgba(124, 58, 237, 0.2);
