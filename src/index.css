@@ -128,4 +128,7 @@
   }
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+
+  .news-ticker-item:hover { color: var(--accent-purple) !important; }
+  .news-ticker-container:hover { border-color: var(--glass-border-hover) !important; }
 }
