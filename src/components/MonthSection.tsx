@@ -2,7 +2,7 @@ import { format } from 'date-fns';
 import { zhCN } from 'date-fns/locale';
 import {
   Thermometer, CloudRain, Droplets, Wind, Sun, Star,
-  Megaphone, Flame, Clock, CalendarDays, AlertCircle,
+  Megaphone, Flame, Clock, CalendarDays, AlertCircle, Info,
 } from 'lucide-react';
 import DataCard from '@/components/DataCard';
 import { ScrollArea } from '@/components/ScrollArea';
@@ -128,6 +128,10 @@ export default function MonthSection({ item, regionName, theme }: MonthSectionPr
                 ))}
               </div>
             )}
+            <div className="flex items-start gap-1 pt-1 text-[9px]" style={{ color: 'var(--text-tertiary)' }}>
+              <Info className="w-3 h-3 shrink-0 mt-0.5" />
+              <span>气候参考为季节性趋势，非实时天气预报</span>
+            </div>
             <div className="grid grid-cols-2 gap-x-2 gap-y-1 mt-1 pt-2 border-t text-[10px]" style={{ borderColor: 'var(--glass-border)', color: 'var(--text-tertiary)' }}>
               <div className="flex items-center gap-1"><Droplets className="w-3 h-3" />{data.humidity}</div>
               <div className="flex items-center gap-1"><CloudRain className="w-3 h-3" />{data.precipitation}</div>

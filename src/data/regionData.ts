@@ -286,15 +286,15 @@ export const regions: RegionData[] = [
         ],
       },
       6: {
-        month: 6, monthName: '6月', climate: '夏季开始', temperature: '15\u2103 ~ 30\u2103', climateIcon: 'sun',
-        weatherDetail: '南半球冬季，凉爽多雨',
+        month: 6, monthName: '6月', climate: '初夏炎热', temperature: '20℃ ~ 35℃', climateIcon: 'sun',
+        weatherDetail: '初夏升温，雷雨增多，西部热浪初现',
         humidity: '60%-75%',
-        precipitation: '冬季降雨',
+        precipitation: '雷阵雨增多',
         wind: '西风 4-5级',
-        daylight: '日照较短 10-11h',
-        subRegions: [
-          { name: '美国', climate: '初夏', temperature: '18℃~32℃' },
-          { name: '加拿大', climate: '初夏宜人', temperature: '10℃~25℃' }
+        daylight: '日照最长 14-15h',
+subRegions: [
+          { name: '美国', climate: '初夏炎热', temperature: '20℃~35℃' },
+          { name: '加拿大', climate: '温和初夏', temperature: '12℃~26℃' }
         ],
         holidays: [
           { name: '父亲节 (Father\'s Day)', date: '6月第3个周日', importance: 'S' },
@@ -342,15 +342,15 @@ export const regions: RegionData[] = [
         ],
       },
       7: {
-        month: 7, monthName: '7月', climate: '盛夏炎热', temperature: '20\u2103 ~ 35\u2103', climateIcon: 'sun',
-        weatherDetail: '南半球冬季，凉爽多雨',
+        month: 7, monthName: '7月', climate: '极端高温', temperature: '24℃ ~ 40℃', climateIcon: 'sun',
+        weatherDetail: '盛夏酷热，热浪频发，西部山火风险高',
         humidity: '60%-75%',
-        precipitation: '冬季降雨',
+        precipitation: '对流雨/干旱',
         wind: '西风 4-5级',
-        daylight: '日照较短 10-11h',
-        subRegions: [
-          { name: '美国', climate: '盛夏炎热', temperature: '22℃~38℃' },
-          { name: '加拿大', climate: '夏季温暖', temperature: '15℃~28℃' }
+        daylight: '日照最长 14-15h',
+subRegions: [
+          { name: '美国', climate: '极端高温', temperature: '24℃~40℃' },
+          { name: '加拿大', climate: '夏季炎热', temperature: '16℃~30℃' }
         ],
         holidays: [
           { name: '独立日 (Independence Day)', date: '7月4日', importance: 'S' },
@@ -396,15 +396,15 @@ export const regions: RegionData[] = [
         ],
       },
       8: {
-        month: 8, monthName: '8月', climate: '盛夏持续', temperature: '20\u2103 ~ 35\u2103', climateIcon: 'sun',
-        weatherDetail: '南半球冬季，凉爽多雨',
+        month: 8, monthName: '8月', climate: '高温持续', temperature: '22℃ ~ 38℃', climateIcon: 'sun',
+        weatherDetail: '高温持续，南部湿热，西部仍多热浪',
         humidity: '60%-75%',
-        precipitation: '冬季降雨',
+        precipitation: '雷阵雨/干旱',
         wind: '西风 4-5级',
-        daylight: '日照较短 10-11h',
-        subRegions: [
-          { name: '美国', climate: '夏末', temperature: '20℃~35℃' },
-          { name: '加拿大', climate: '凉爽初秋', temperature: '12℃~25℃' }
+        daylight: '日照渐短 13-14h',
+subRegions: [
+          { name: '美国', climate: '酷热持续', temperature: '22℃~38℃' },
+          { name: '加拿大', climate: '夏末温暖', temperature: '14℃~28℃' }
         ],
         holidays: [
           { name: '返校季 (Back to School)', date: '8月整月', importance: 'S' },
@@ -907,18 +907,18 @@ export const regions: RegionData[] = [
         ],
       },
       5: {
-        month: 5, monthName: '5月', climate: '春末宜人', temperature: '10\u2103 ~ 22\u2103', climateIcon: 'sun',
-        weatherDetail: '温暖宜人，绿意盎然',
+        month: 5, monthName: '5月', climate: '春末转热', temperature: '12℃ ~ 26℃', climateIcon: 'sun',
+        weatherDetail: '气温快速攀升，南部已现热浪苗头',
         humidity: '55%-70%',
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
-        subRegions: [
-          { name: '英国', climate: '凉爽', temperature: '12℃~22℃' },
-          { name: '法国', climate: '温暖宜人', temperature: '8℃~20℃' },
-          { name: '德国', climate: '温暖', temperature: '10℃~20℃' },
-          { name: '西班牙', climate: '初夏温暖', temperature: '14℃~25℃' },
-          { name: '葡萄牙', climate: '初夏温暖', temperature: '14℃~25℃' }
+subRegions: [
+          { name: '英国', climate: '温和转热', temperature: '10℃~23℃' },
+          { name: '法国', climate: '初夏温暖', temperature: '12℃~24℃' },
+          { name: '德国', climate: '温暖干燥', temperature: '12℃~24℃' },
+          { name: '西班牙', climate: '初夏炎热', temperature: '16℃~28℃' },
+          { name: '葡萄牙', climate: '初夏炎热', temperature: '16℃~28℃' }
         ],
         holidays: [
           { name: '五一劳动节', date: '5月1日', importance: 'A' },
@@ -965,18 +965,18 @@ export const regions: RegionData[] = [
         ],
       },
       6: {
-        month: 6, monthName: '6月', climate: '初夏温暖', temperature: '15\u2103 ~ 28\u2103', climateIcon: 'sun',
-        weatherDetail: '湿热交加，雷暴频发',
+        month: 6, monthName: '6月', climate: '初夏炎热', temperature: '16℃ ~ 32℃', climateIcon: 'sun',
+        weatherDetail: '高温初现，欧洲北部偶现热浪',
         humidity: '65%-80%',
         precipitation: '雷阵雨/暴雨',
         wind: '南风 3-5级',
         daylight: '日照最长 14-15h',
-        subRegions: [
-          { name: '英国', climate: '初夏温和', temperature: '15℃~25℃' },
-          { name: '法国', climate: '初夏舒适', temperature: '12℃~24℃' },
-          { name: '德国', climate: '初夏温和', temperature: '13℃~23℃' },
-          { name: '西班牙', climate: '夏季炎热', temperature: '18℃~30℃' },
-          { name: '葡萄牙', climate: '夏季炎热', temperature: '18℃~30℃' }
+subRegions: [
+          { name: '英国', climate: '夏季炎热', temperature: '14℃~28℃' },
+          { name: '法国', climate: '盛夏初现', temperature: '16℃~30℃' },
+          { name: '德国', climate: '夏季炎热', temperature: '15℃~29℃' },
+          { name: '西班牙', climate: '盛夏酷热', temperature: '20℃~35℃' },
+          { name: '葡萄牙', climate: '盛夏酷热', temperature: '20℃~35℃' }
         ],
         holidays: [
           { name: '父亲节 (Father\'s Day)', date: '6月第3个周日', importance: 'S' },
@@ -1021,18 +1021,18 @@ export const regions: RegionData[] = [
         ],
       },
       7: {
-        month: 7, monthName: '7月', climate: '盛夏炎热', temperature: '18\u2103 ~ 32\u2103', climateIcon: 'sun',
-        weatherDetail: '酷暑难耐，午后雷阵雨',
+        month: 7, monthName: '7月', climate: '盛夏酷热', temperature: '18℃ ~ 35℃', climateIcon: 'sun',
+        weatherDetail: '历史级高温频发，南欧可达40℃以上',
         humidity: '70%-85%',
         precipitation: '对流雨频发',
         wind: '闷热少风 1-3级',
         daylight: '日照最长 14-15h',
-        subRegions: [
-          { name: '英国', climate: '温和夏季', temperature: '18℃~28℃' },
-          { name: '法国', climate: '夏季温暖', temperature: '15℃~26℃' },
-          { name: '德国', climate: '夏季温暖', temperature: '16℃~27℃' },
-          { name: '西班牙', climate: '盛夏酷热', temperature: '22℃~35℃' },
-          { name: '葡萄牙', climate: '盛夏炎热', temperature: '22℃~35℃' }
+subRegions: [
+          { name: '英国', climate: '炎热，偶现热浪', temperature: '16℃~30℃' },
+          { name: '法国', climate: '盛夏炎热', temperature: '18℃~33℃' },
+          { name: '德国', climate: '盛夏炎热', temperature: '17℃~32℃' },
+          { name: '西班牙', climate: '极端高温', temperature: '24℃~40℃' },
+          { name: '葡萄牙', climate: '极端高温', temperature: '24℃~40℃' }
         ],
         holidays: [
           { name: '法国国庆日 (Bastille Day)', date: '7月14日', importance: 'A' },
@@ -1076,18 +1076,18 @@ export const regions: RegionData[] = [
         ],
       },
       8: {
-        month: 8, monthName: '8月', climate: '盛夏持续', temperature: '18\u2103 ~ 32\u2103', climateIcon: 'sun',
-        weatherDetail: '高温酷热，台风季开始',
+        month: 8, monthName: '8月', climate: '高温持续', temperature: '18℃ ~ 34℃', climateIcon: 'sun',
+        weatherDetail: '热浪持续，南部干旱风险高',
         humidity: '75%-90%',
         precipitation: '台风/暴雨',
         wind: '多变 5-8级',
         daylight: '日照渐短 13-14h',
-        subRegions: [
-          { name: '英国', climate: '夏末凉爽', temperature: '18℃~28℃' },
-          { name: '法国', climate: '夏末温暖', temperature: '15℃~25℃' },
-          { name: '德国', climate: '夏末温和', temperature: '16℃~26℃' },
-          { name: '西班牙', climate: '夏末炎热', temperature: '22℃~34℃' },
-          { name: '葡萄牙', climate: '夏末炎热', temperature: '22℃~34℃' }
+subRegions: [
+          { name: '英国', climate: '炎热干燥', temperature: '16℃~29℃' },
+          { name: '法国', climate: '高温持续', temperature: '17℃~32℃' },
+          { name: '德国', climate: '高温持续', temperature: '16℃~31℃' },
+          { name: '西班牙', climate: '酷暑难当', temperature: '24℃~39℃' },
+          { name: '葡萄牙', climate: '酷暑难当', temperature: '24℃~39℃' }
         ],
         holidays: [
           { name: '夏季银行假日(英)', date: '8月最后周一', importance: 'A' },
@@ -1132,18 +1132,18 @@ export const regions: RegionData[] = [
         ],
       },
       9: {
-        month: 9, monthName: '9月', climate: '初秋凉爽', temperature: '10\u2103 ~ 24\u2103', climateIcon: 'leaf',
-        weatherDetail: '凉爽干燥，秋风送爽',
+        month: 9, monthName: '9月', climate: '初秋仍热', temperature: '14℃ ~ 29℃', climateIcon: 'leaf',
+        weatherDetail: '秋老虎明显，南部仍有高温',
         humidity: '45%-60%',
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
-        subRegions: [
-          { name: '英国', climate: '秋凉多雨', temperature: '15℃~24℃' },
-          { name: '法国', climate: '秋凉', temperature: '12℃~22℃' },
-          { name: '德国', climate: '秋凉', temperature: '12℃~22℃' },
-          { name: '西班牙', climate: '初秋温暖', temperature: '18℃~30℃' },
-          { name: '葡萄牙', climate: '初秋温暖', temperature: '18℃~30℃' }
+subRegions: [
+          { name: '英国', climate: '温和秋初', temperature: '13℃~25℃' },
+          { name: '法国', climate: '秋老虎', temperature: '15℃~28℃' },
+          { name: '德国', climate: '秋老虎', temperature: '14℃~27℃' },
+          { name: '西班牙', climate: '夏末炎热', temperature: '20℃~34℃' },
+          { name: '葡萄牙', climate: '夏末炎热', temperature: '20℃~34℃' }
         ],
         holidays: [
           { name: '慕尼黑啤酒节 (Oktoberfest)', date: '9月末-10月初', importance: 'S' },
@@ -1576,16 +1576,16 @@ export const regions: RegionData[] = [
         ],
       },
       5: {
-        month: 5, monthName: '5月', climate: '春季温和', temperature: '8\u2103 ~ 20\u2103', climateIcon: 'sun',
-        weatherDetail: '温暖宜人，绿意盎然',
+        month: 5, monthName: '5月', climate: '春末转热', temperature: '12℃ ~ 26℃', climateIcon: 'sun',
+        weatherDetail: '气温快速回升，偶现干热风',
         humidity: '55%-70%',
         precipitation: '阵雨增多',
         wind: '和风 2-3级',
         daylight: '日照较长 13-15h',
         subRegions: [
-          { name: '俄罗斯西部', climate: '温和', temperature: '10℃~20℃' },
-          { name: '乌克兰', climate: '温暖', temperature: '12℃~22℃' },
-          { name: '波兰', climate: '温暖', temperature: '10℃~20℃' }
+          { name: '俄罗斯西部', climate: '温暖干燥', temperature: '12℃~24℃' },
+          { name: '乌克兰', climate: '温暖', temperature: '14℃~26℃' },
+          { name: '波兰', climate: '温暖', temperature: '12℃~24℃' }
         ],
         holidays: [
           { name: '劳动节', date: '5月1日', importance: 'A' },
@@ -1629,16 +1629,16 @@ export const regions: RegionData[] = [
         ],
       },
       6: {
-        month: 6, monthName: '6月', climate: '初夏温暖', temperature: '15\u2103 ~ 25\u2103', climateIcon: 'sun',
-        weatherDetail: '湿热交加，雷暴频发',
+        month: 6, monthName: '6月', climate: '初夏炎热', temperature: '18℃ ~ 30℃', climateIcon: 'sun',
+        weatherDetail: '高温初现，西部干旱风险上升',
         humidity: '65%-80%',
         precipitation: '雷阵雨/暴雨',
         wind: '南风 3-5级',
         daylight: '日照最长 14-15h',
         subRegions: [
-          { name: '俄罗斯西部', climate: '初夏', temperature: '15℃~25℃' },
-          { name: '乌克兰', climate: '初夏', temperature: '18℃~26℃' },
-          { name: '波兰', climate: '初夏', temperature: '15℃~24℃' }
+          { name: '俄罗斯西部', climate: '初夏炎热', temperature: '16℃~28℃' },
+          { name: '乌克兰', climate: '夏季炎热', temperature: '18℃~30℃' },
+          { name: '波兰', climate: '初夏温暖', temperature: '16℃~26℃' }
         ],
         holidays: [
           { name: '俄罗斯日', date: '6月12日', importance: 'A' },
@@ -1681,16 +1681,16 @@ export const regions: RegionData[] = [
         ],
       },
       7: {
-        month: 7, monthName: '7月', climate: '夏季温暖', temperature: '18\u2103 ~ 28\u2103', climateIcon: 'sun',
-        weatherDetail: '酷暑难耐，午后雷阵雨',
+        month: 7, monthName: '7月', climate: '盛夏炎热', temperature: '20℃ ~ 32℃', climateIcon: 'sun',
+        weatherDetail: '热浪频发，森林火灾风险高',
         humidity: '70%-85%',
         precipitation: '对流雨频发',
         wind: '闷热少风 1-3级',
         daylight: '日照最长 14-15h',
         subRegions: [
-          { name: '俄罗斯西部', climate: '夏季温暖', temperature: '18℃~28℃' },
-          { name: '乌克兰', climate: '夏季温暖', temperature: '20℃~30℃' },
-          { name: '波兰', climate: '夏季温暖', temperature: '18℃~27℃' }
+          { name: '俄罗斯西部', climate: '盛夏炎热', temperature: '18℃~32℃' },
+          { name: '乌克兰', climate: '盛夏炎热', temperature: '20℃~33℃' },
+          { name: '波兰', climate: '夏季炎热', temperature: '18℃~30℃' }
         ],
         holidays: [
           { name: '渔民节', date: '7月第2个周日', importance: 'B' },
@@ -1732,16 +1732,16 @@ export const regions: RegionData[] = [
         ],
       },
       8: {
-        month: 8, monthName: '8月', climate: '夏末温暖', temperature: '15\u2103 ~ 25\u2103', climateIcon: 'sun',
-        weatherDetail: '高温酷热，台风季开始',
+        month: 8, monthName: '8月', climate: '夏末炎热', temperature: '18℃ ~ 30℃', climateIcon: 'sun',
+        weatherDetail: '高温持续，秋燥开始',
         humidity: '75%-90%',
-        precipitation: '台风/暴雨',
+        precipitation: '雷阵雨减少',
         wind: '多变 5-8级',
         daylight: '日照渐短 13-14h',
         subRegions: [
-          { name: '俄罗斯西部', climate: '夏末凉爽', temperature: '16℃~25℃' },
-          { name: '乌克兰', climate: '夏末', temperature: '18℃~28℃' },
-          { name: '波兰', climate: '夏末', temperature: '16℃~25℃' }
+          { name: '俄罗斯西部', climate: '夏末炎热', temperature: '16℃~30℃' },
+          { name: '乌克兰', climate: '夏末炎热', temperature: '18℃~31℃' },
+          { name: '波兰', climate: '夏末温暖', temperature: '16℃~27℃' }
         ],
         holidays: [
           { name: '空军节', date: '8月第3个周日', importance: 'B' },
@@ -1783,15 +1783,15 @@ export const regions: RegionData[] = [
         ],
       },
       9: {
-        month: 9, monthName: '9月', climate: '初秋凉爽', temperature: '8\u2103 ~ 18\u2103', climateIcon: 'leaf',
-        weatherDetail: '凉爽干燥，秋风送爽',
+        month: 9, monthName: '9月', climate: '初秋仍暖', temperature: '12℃ ~ 24℃', climateIcon: 'leaf',
+        weatherDetail: '秋老虎明显，温差加大',
         humidity: '45%-60%',
         precipitation: '晴多雨少',
         wind: '西风 3-4级',
         daylight: '日照缩短 11-12h',
         subRegions: [
-          { name: '俄罗斯西部', climate: '秋凉', temperature: '10℃~20℃' },
-          { name: '乌克兰', climate: '秋凉', temperature: '12℃~22℃' },
+          { name: '俄罗斯西部', climate: '初秋温暖', temperature: '10℃~22℃' },
+          { name: '乌克兰', climate: '初秋温暖', temperature: '12℃~24℃' },
           { name: '波兰', climate: '秋凉', temperature: '10℃~20℃' }
         ],
         holidays: [
